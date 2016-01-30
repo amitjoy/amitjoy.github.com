@@ -20,9 +20,9 @@ Hence, OSGi Alliance has endeavored to encapsulate all the features in a easy to
 It provides all the benefits wrapped in easy to use development modules. All the OSGi micro-services are bundled in the framework.  
 
 You can have a look of all the micro-services that it provides in the following link.  
+<br />
 
-
-<a markdown="0" href="http://enroute.osgi.org/book/400-services.html" target="_blank">OSGi enRote Micro-Services</a>
+<a markdown="0" href="http://enroute.osgi.org/book/400-services.html" class="btn" target="_blank">OSGi enRote Micro-Services</a>
 
 ### Custom Micro-Services
 
@@ -33,6 +33,6 @@ The bundled micro-services not only includes the default OSGi micro-services but
 Just few days back, I had developed an application using OSGi enRoute incorporating most of the micro-services in an efficient way. The application is called **LED Controller**.  
 
 You can have a look at the application in the following repository which also contains several other small examples on how to use such an awesome framework in real-life software development.  
+<br />
 
-
-<a markdown="0" href="https://github.com/osgi/osgi.enroute.examples" target="_blank">OSGi enRote Examples</a>
+<a markdown="0" href="https://github.com/osgi/osgi.enroute.examples" class="btn" target="_blank">OSGi enRote Examples</a>
