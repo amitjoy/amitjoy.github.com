@@ -1,11 +1,13 @@
 ---
 layout: post
 title: "Java -able Interfaces"
-author: Amit Kumar Mondal
+author: billy_rick
 modified:
-excerpt: 
+excerpt: "The enumeration of Java interfaces that ends with -able"
 tags: [Java]
 ---
+
+{% include _toc.html %}
 
 ## Overview
 

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Java Lazy Evaluation"
-author: Amit Kumar Mondal
+author: billy_rick
 modified:
-excerpt:
+excerpt: "Adapting Java Lazy Evaluation in your project"
 tags: [Java 8, lambda]
 ---
 
