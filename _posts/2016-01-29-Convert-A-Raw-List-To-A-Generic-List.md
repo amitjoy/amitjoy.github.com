@@ -3,7 +3,7 @@ layout: post
 title: "Convert a raw List to a generic List"
 author: Amit_Kumar_Mondal
 modified:
-excerpt: How to convert a raw List to its generic counterpart?
+excerpt: "How to convert a raw List to its generic counterpart?"
 tags: [Java]
 ---
 
