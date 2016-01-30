@@ -2,7 +2,7 @@
 
 title:            Java Miscellanea
 locale:           en_US
-url:
+url:              amitjoy.github.io
 
 
 # Jekyll configuration
@@ -43,10 +43,10 @@ owner:
   name: Amit Kumar Mondal
   avatar: bio-photo.jpg
   bio: "Describe your self."
-  email:
+  email: admin@amitinside.com
   disqus-shortname:
   twitter: #username
-  facebook: #username
+  facebook: #amitjoy
   google:
     plus: #username
     analytics:
@@ -54,9 +54,9 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
+  github: #amitjoy
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
+  linkedin: #amijoy
   xing: #username
   instagram: #username
   lastfm: #username
