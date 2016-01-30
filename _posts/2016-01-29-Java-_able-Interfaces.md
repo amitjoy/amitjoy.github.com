@@ -1,10 +1,11 @@
 ---
 layout: post
-category : Java
-tagline: "Java -able Interfaces"
-tags : [Java]
+title: "Java -able Interfaces"
+author: Amit Kumar Mondal
+modified:
+excerpt: 
+tags: [Java]
 ---
-{% include JB/setup %}
 
 ## Overview
 

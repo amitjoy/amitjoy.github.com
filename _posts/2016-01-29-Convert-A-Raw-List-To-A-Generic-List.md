@@ -1,10 +1,11 @@
 ---
 layout: post
-category : Java
-tagline: "Convert a raw List to a generic List"
-tags : [Java]
+title: "Convert a raw List to a generic List"
+author: Amit Kumar Mondal
+modified:
+excerpt: 
+tags: [Java]
 ---
-{% include JB/setup %}
 
 ## Overview
 
