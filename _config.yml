@@ -46,7 +46,7 @@ owner:
   email: admin@amitinside.com
   disqus-shortname:
   twitter: #username
-  facebook: #amitjoy
+  facebook: amitjoy
   google:
     plus: #username
     analytics:
@@ -54,9 +54,9 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #amitjoy
+  github: amitjoy
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #amijoy
+  linkedin: amijoy
   xing: #username
   instagram: #username
   lastfm: #username
