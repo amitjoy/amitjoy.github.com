@@ -41,7 +41,7 @@ titlecase: true
 # Site owner
 owner:
   name: Amit Kumar Mondal
-  avatar: bio-photo.jpg
+  avatar: pic.jpg
   bio: "Describe your self."
   email: admin@amitinside.com
   disqus-shortname:
