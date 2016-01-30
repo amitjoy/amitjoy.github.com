@@ -38,7 +38,9 @@ public final class CommunicationException<T> extends Exception {
 
 The afore-mentioned code will result in the following error.
 
-**The generic class CommunicationException<T> may not subclass java.lang.Throwable**
+{% highlight java %}
+The generic class CommunicationException<T> may not subclass java.lang.Throwable
+{% endhighlight %}
 
 ### Restriction
 
