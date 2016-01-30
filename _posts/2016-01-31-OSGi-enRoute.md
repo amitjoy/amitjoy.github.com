@@ -26,11 +26,11 @@ You can have a look of all the micro-services that it provides in the following 
 
 ### Custom Micro-Services
 
-The bundled micro-services not only includes the default OSGi micro-services but also custom micro-services so that it gets easier for people to develop Java EE applications on the fly. It also does provide micro-services to operate on Raspberry Pi GPIO ports.
+The bundled micro-services not only includes the default OSGi micro-services but also custom micro-services so that it gets easier for people to develop **Java EE** applications on the fly. It also does provide micro-services to operate on **Raspberry Pi GPIO** ports.
 
 ### Examples
 
-Just few days back, I had developed an application using OSGi enRoute incorporating most of the micro-services in an efficient way. The application is called LED Controller.  
+Just few days back, I had developed an application using OSGi enRoute incorporating most of the micro-services in an efficient way. The application is called **LED Controller**.  
 
 You can have a look at the application in the following repository which also contains several other small examples on how to use such an awesome framework in real-life software development.  
 
