@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Java -able Interfaces"
-author: billy_rick
+author: amit
 modified:
 excerpt: "The enumeration of Java interfaces that ends with -able"
 tags: [Java]
