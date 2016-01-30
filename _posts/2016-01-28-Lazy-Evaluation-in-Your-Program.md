@@ -3,9 +3,11 @@ layout: post
 title: "Java Lazy Evaluation"
 author: Amit Kumar Mondal
 modified:
-excerpt: 
+excerpt:
 tags: [Java 8, lambda]
 ---
+
+{% include _toc.html %}
 
 Just few days back, I stumbled upon an article in DZone about implementing Lazy Evaluation in your current program. Those of you who are quite acquainted with Java 8 Higher Order Functions or Lambda Expressions, might have already used stream based Higher Order Functions which facilitates us with the opportunity for Lazy Evaluation.
 
