@@ -56,3 +56,9 @@ it clearly shows that Object array can not be casted to String array because the
 The reified type of an array must be a subtype of the erasure <br/>
 
 So, according to this, in the previous problem, T has been bound to String but the reified type of the array is still Object.
+
+### Cast-Iron Guarantee
+
+Casts inserted automatically by erasure will never fail unless your application code has **Unchecked Warning**.
+
+This clearly states that due to erasure, the casts will never fail in run-time unless your code has the **Unchecked Warning** and in our scenario, we do have an **Unchecked Warning** which causes the **ClassCastException** in run-time.
