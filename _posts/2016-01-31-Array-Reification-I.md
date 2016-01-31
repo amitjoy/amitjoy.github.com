@@ -76,7 +76,7 @@ public final class ArrayOfList {
 This program also suffers from the same compilation error.
 
 {% highlight java %}
-Cannot create a generic array of T
+Cannot create a generic array of List<String>
 {% endhighlight %}
 
 ### Solution
