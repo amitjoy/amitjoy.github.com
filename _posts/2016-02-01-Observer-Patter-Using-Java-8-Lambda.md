@@ -17,10 +17,8 @@ We have previously seen about implementing Command Pattern using Java 8 Lambda e
 
 ### Observer Pattern
 
-The following image is an excerpt from **SourceMaking.com**
-
 <figure>
-	<img src="https://sourcemaking.com/files/v2/content/patterns/Observer_example1-2x.png"></a>
+	<img src="http://www.uml-diagrams.org/examples/composite-structure-example-observer.png"></a>
 </figure>
 
 ### The Problem
@@ -78,8 +76,8 @@ public final class Aliens implements LandingObserver {
 {% highlight java %}
 public final class Moon {
 
-	public static void main(final String[] args) {
-    final Moon moon = new Moon();
+  private static void main(final String[] args) {
+		final Moon moon = new Moon();
 		moon.startSpying(new Nasa());
 		moon.startSpying(new Aliens());
 
@@ -121,8 +119,8 @@ public interface LandingObserver {
 {% highlight java %}
 public final class Moon {
 
-	public static void main(final String[] args) {
-    final Moon moon = new Moon();
+  private static void main(final String[] args) {
+		final Moon moon = new Moon();
 
 		moon.startSpying(name -> {
 			if (name.contains("Apollo")) {
