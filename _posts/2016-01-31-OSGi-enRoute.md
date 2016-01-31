@@ -17,20 +17,20 @@ Hence, OSGi Alliance has endeavored to encapsulate all the features in a easy to
 
 ### Advantages
 
-It provides all the benefits wrapped in easy to use development modules. All the OSGi micro-services are bundled in the framework.  
+It provides all the benefits wrapped in easy to use development modules. All the OSGi &micro;services are bundled in the framework.  
 
-You can have a look of all the micro-services that it provides in the following link.  
+You can have a look of all the &micro;services that it provides in the following link.  
 <br />
 
-<a markdown="0" href="http://enroute.osgi.org/book/400-services.html" class="btn" target="_blank">OSGi enRoute Micro-Services</a>
+<a markdown="0" href="http://enroute.osgi.org/book/400-services.html" class="btn" target="_blank">OSGi enRoute &micro;Services</a>
 
-### Custom Micro-Services
+### Custom &micro;Services
 
-The bundled micro-services not only includes the default OSGi micro-services but also custom micro-services so that it gets easier for people to develop **Java EE** applications on the fly. It also does provide micro-services to operate on **Raspberry Pi GPIO** ports.
+The bundled &micro;services not only includes the default OSGi &micro;services but also custom &micro;services so that it gets easier for people to develop **Java EE** applications on the fly. It also does provide &micro;services to operate on **Raspberry Pi GPIO** ports.
 
 ### Examples
 
-Just few days back, I had developed an application using OSGi enRoute incorporating most of the micro-services in an efficient way. The application is called **LED Controller**.  
+Just few days back, I had developed an application using OSGi enRoute incorporating most of the &micro;services in an efficient way. The application is called **LED Controller**.  
 
 You can have a look at the application in the following repository which also contains several other small examples on how to use such an awesome framework in real-life software development.  
 <br />
