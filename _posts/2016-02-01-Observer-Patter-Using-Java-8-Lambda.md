@@ -23,7 +23,7 @@ We have previously seen about implementing Command Pattern using Java 8 Lambda e
 
 ### The Problem
 
-The problem is taken from the book "Java 8 Lambdas by Richard Warburton".
+The problem is taken from the book **Java 8 Lambdas by Richard Warburton**.
 
 Let's discuss about the problem before solving it using Java 8 Lambda Expression.
 
