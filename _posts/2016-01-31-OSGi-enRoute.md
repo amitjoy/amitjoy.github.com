@@ -11,7 +11,7 @@ tags: [Java, OSGi]
 
 ## Overview
 
-In today's world, Java has been pervasively used in most of the enterprise applications. To develop a software in an efficient way is the main focus of applied software engineering. Hence, we have lots of options at hand, starting from design patterns, architectural patterns, testing patterns et al. To make software development more modular, Java had introduced OSGi long back but due to its intricacies in understanding and applying to actual software development, people don't prefer to use OSGi. But still, it provides the best way to develop software systems in a modular way.  
+In today's world, Java has been pervasively used in most of the enterprise applications. To develop a software in an efficient way is the main focus of applied software engineering. Hence, we have lots of options at hand, starting from design patterns, architectural patterns, testing patterns et al. To make software development more modular, Java had introduced OSGi long back but due to its intricacies in understanding and applying to actual software development, people don't prefer to use OSGi. But still, it provides the best way to develop software systems in a modular way.  <br />
 
 Hence, OSGi Alliance has endeavored to encapsulate all the features in a easy to use framework and finally it came up with an efficient framework - OSGi enRoute.
 
@@ -30,7 +30,7 @@ The bundled &micro;services not only includes the default OSGi &micro;services b
 
 ### Examples
 
-Just few days back, I had developed an application using OSGi enRoute incorporating most of the &micro;services in an efficient way. The application is called **LED Controller**.  
+Just few days back, I had developed an application using OSGi enRoute incorporating most of the &micro;services in an efficient way. The application is called **LED Controller**.  <br />
 
 You can have a look at the application in the following repository which also contains several other small examples on how to use such an awesome framework in real-life software development.  
 <br />

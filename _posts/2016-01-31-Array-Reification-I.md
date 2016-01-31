@@ -27,7 +27,7 @@ public final class ArrayReification {
 }
 {% endhighlight %}
 
-Any clue about the problem that the application might encounter?
+Any clue about the problem that the application might encounter? <br />
 
 It suffers from **ArrayStoreException** at run-time because the actural array object has the component type of **Integer** which can not store any value of type **Double**.
 
@@ -50,7 +50,7 @@ public final class Helper {
 }
 {% endhighlight %}
 
-Is the code correct?
+Is the code correct? <br />
 
 The aforementioned code will have a compilation error.
 
@@ -58,7 +58,7 @@ The aforementioned code will have a compilation error.
 Cannot create a generic array of T
 {% endhighlight %}
 
-The error occurs due to the type variable of not being a reifiable type.
+The error occurs due to the type variable of not being a reifiable type. <br />
 
 Let's look at another example.
 
