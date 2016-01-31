@@ -66,8 +66,9 @@ Let's look at another example.
 public final class ArrayOfList {
 
 	public static void main(final String[] args) {
-		final int SIZE = 10;
-		final List<Integer>[] arrayOfLists = new List<Integer>[SIZE];
+		final List<String> cars = asList("Audi", "BMW", "Kia", "Tata");
+		final List<String> universities = asList("TU Munich", "RWTH Aachen", "Uni Stuttgart", "TU Kiel");
+		final List<String>[] arrayOfLists = new List<String>[] { cars, universities };
 	}
 }
 {% endhighlight %}
