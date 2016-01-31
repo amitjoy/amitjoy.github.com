@@ -1,5 +1,5 @@
 ---
 layout: home
-excerpt: "Java Odds and Evens"
+excerpt: "Java Miscellaneous Articles and Remnants"
 tags: [Java, OSGi, Lambda]
 ---
