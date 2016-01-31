@@ -3,6 +3,7 @@ layout: post
 title: "OSGi enRoute - Framework for OSGi Development"
 author: amit
 modified:
+share: true
 excerpt: "An easy to use framework to develop modular applications using OSGi"
 tags: [Java, OSGi]
 ---

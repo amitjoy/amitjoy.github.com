@@ -3,6 +3,7 @@ layout: post
 title: "Java -able Interfaces"
 author: amit
 modified:
+share: true
 excerpt: "The enumeration of Java interfaces that ends with -able"
 tags: [Java]
 ---
