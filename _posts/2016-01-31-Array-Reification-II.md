@@ -17,21 +17,20 @@ This post is a continuation of the previous post on **Array Reification**. Today
 {% highlight java %}
 public final class Helper {
 
-	public static void main(final String[] args) {
-		final List<String> strings = asList("a", "b", "c");
-    final String[] array = toArray(strings);
-		System.out.println(array);
-	}
+  	public static void main(final String[] args) {
+  		final List<String> strings = asList("a", "b", "c");
+  		final String[] array = toArray(strings);
+  		System.out.println(array);
+  	}
 
-	public static <T> T[] toArray(final Collection<T> collection) {
-		final T[] arr = (T[]) new Object[collection.size()];
-		int i = 0;
-		for (final T val : collection) {
-			arr[i++] = val;
-		}
-		return arr;
-	}
-
+  	public static <T> T[] toArray(final Collection<T> collection) {
+  		final T[] arr = (T[]) new Object[collection.size()];
+  		int i = 0;
+  		for (final T val : collection) {
+  			arr[i++] = val;
+  		}
+  		return arr;
+  	}
 }
 {% endhighlight %}
 
