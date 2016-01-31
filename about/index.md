@@ -11,9 +11,11 @@ comments: false
 
 ## Short Bio
 
-This is Amit Kumar Mondal and I’m a 2012 Bachelor of Technology graduate from National Institute of Technology, Durgapur (NIT Durgapur) in IT and currently studying Master’s Computer Science at Technical University of Munich, Germany. This is my personal blog where I am interested to array several java related stuffs which might be of your interest.
+I am a professional Java Developer with 3.5 years of experience. I had completed my Bachelor from National Institute of Technology, Durgapur, India in 2012 and currently pursuing my Master's degree in Technical University of Munich, Germany. I have intensive experiences in enterprise Internet of Things related projects, in Modular Application Development using OSGi and in Eclipse Frameworks (Eclipse RCP, Eclipse Kura, EMF, Equinox).
 
-It’s my passion to work with my mac all day long, garnering knowledge from heterogenous sources. Here I would love to enumerate Java-related stuffs to showcase the versatility of Java.
+I am also a passionate Java Developer and an Enthusiast. It’s my passion to work with my mac all day long, garnering knowledge from heterogenous sources, fiddling around with cool things in Java. That's why, here I would love to enumerate Java-related miscellaneous articles and remnants to demonstrate the versatility of Java.
+
+I hope you would love them.
 
 ## Resume
 
