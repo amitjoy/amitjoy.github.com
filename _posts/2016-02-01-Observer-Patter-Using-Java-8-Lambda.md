@@ -76,7 +76,7 @@ public final class Aliens implements LandingObserver {
 {% highlight java %}
 public final class Moon {
 
-  private static void main(final String[] args) {
+	public static void main(final String[] args) {
 		final Moon moon = new Moon();
 		moon.startSpying(new Nasa());
 		moon.startSpying(new Aliens());
@@ -119,7 +119,7 @@ public interface LandingObserver {
 {% highlight java %}
 public final class Moon {
 
-  private static void main(final String[] args) {
+	public static void main(final String[] args) {
 		final Moon moon = new Moon();
 
 		moon.startSpying(name -> {
