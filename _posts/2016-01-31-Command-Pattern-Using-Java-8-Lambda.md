@@ -29,7 +29,7 @@ An editor or IDE has gallons of actions or commands such as open, close, save et
 
 First of all, I would love to tell you about how it can be achieved using the object oriented way.
 
-### Command interface
+### Command
 
 {% highlight java %}
 public interface Command {
@@ -79,7 +79,7 @@ public final class Save implements Command {
 }
 {% endhighlight %}
 
-### Editor interface
+### Receiver
 
 {% highlight java %}
 public interface Editor {
@@ -93,7 +93,7 @@ public interface Editor {
 }
 {% endhighlight %}
 
-### Concrete Editor
+### Concrete Receiver
 
 {% highlight java %}
 public final class MockEditor implements Editor {
@@ -118,7 +118,7 @@ public final class MockEditor implements Editor {
 }
 {% endhighlight %}
 
-### Receiver
+### Invoker
 
 {% highlight java %}
 public final class Macro {
@@ -155,7 +155,8 @@ public final class Client {
 		macro.record(saveCommand);
 
 		macro.run();
-  }
+	}
+
 }
 {% endhighlight %}
 
@@ -163,7 +164,7 @@ public final class Client {
 
 So far, we have seen the object-oriented approach in solving our defined problem using Command Pattern. Now, we would try to solve it using Functional Programming Paradigm which I believe would be more concise and better solution.
 
-### Command interface
+### Command
 
 {% highlight java %}
 public interface Command {
@@ -173,7 +174,7 @@ public interface Command {
 }
 {% endhighlight %}
 
-### Editor interface
+### Receiver
 
 {% highlight java %}
 public interface Editor {
@@ -187,7 +188,7 @@ public interface Editor {
 }
 {% endhighlight %}
 
-### Receiver
+### Invoker
 
 {% highlight java %}
 public final class Macro {
@@ -215,24 +216,28 @@ public final class Macro {
 public final class Client {
 
 	public static void main(final String[] args) {
-      final Macro macro = new Macro();
-  		final Editor editor = new MockEditor();
+		final Macro macro = new Macro();
+		final Editor editor = new MockEditor();
 
-  		macro.run(); // 1st way
+		macro.record(() -> new Open(editor));
+		macro.record(() -> new Save(editor));
 
-  		macro.record(() -> editor.open());
-  		macro.record(() -> editor.save());
+		macro.run(); // 1st way
 
-  		macro.run(); // 2nd way
+		macro.record(() -> editor.open());
+		macro.record(() -> editor.save());
 
-  		macro.record(editor::open);
-  		macro.record(editor::save);
+		macro.run(); // 2nd way
 
-  		macro.run(); // 3rd way
-    }
+		macro.record(editor::open);
+		macro.record(editor::save);
+
+		macro.run(); // 3rd way
+	}
+
 }
 {% endhighlight %}
 
 ### Benefits
 
-You can clearly see that I didn't write any concrete implementation class of the commands. I have only passed those implementations as behaviors to the **record** method as it accespts **SAM (Single Abstract Method) Interfaces (Command and Editor)**.
+You can clearly see that I didn't write any concrete implementation class of the commands. I have only passed those implementations as behaviors to the **record** method as it accepts **SAM (Single Abstract Method) Interface (Command)**.
