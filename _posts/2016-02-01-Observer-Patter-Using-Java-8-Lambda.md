@@ -118,6 +118,7 @@ public interface LandingObserver {
 
 ### Client
 
+{% highlight java %}
 public final class Moon {
 
 	public static void main(final String[] args) {
@@ -152,6 +153,7 @@ public final class Moon {
 	}
 
 }
+{% endhighlight %}
 
 ### Benefits
 
