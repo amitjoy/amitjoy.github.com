@@ -4,6 +4,7 @@ title: "Reification in Java Try Catch Block"
 author: amit
 modified:
 share: true
+comments: true
 excerpt: "How Java catch block catches a given type at run-time?"
 tags: [Java]
 ---

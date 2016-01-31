@@ -4,6 +4,7 @@ title: "Java -able Interfaces"
 author: amit
 modified:
 share: true
+comments: true
 excerpt: "The enumeration of Java interfaces that ends with -able"
 tags: [Java]
 ---

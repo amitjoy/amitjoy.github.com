@@ -1,9 +1,10 @@
 ---
 layout: page
 title: About Me
-tags: [about, Amit]
+tags: [about, Amit Kumar Mondal]
 modified:
-comments: true
+share: false
+comments: false
 ---
 
 {% include _toc.html %}

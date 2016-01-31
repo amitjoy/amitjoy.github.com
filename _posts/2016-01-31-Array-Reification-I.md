@@ -4,6 +4,7 @@ title: "Array Reification I"
 author: amit
 modified:
 share: true
+comments: true
 excerpt: "Array Reification in details"
 tags: [Java]
 ---

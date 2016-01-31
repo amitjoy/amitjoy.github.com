@@ -4,6 +4,7 @@ title: "Java Lazy Evaluation"
 author: amit
 modified:
 share: true
+comments: true
 excerpt: "Adapting Java Lazy Evaluation in your project"
 tags: [Java 8, lambda]
 ---
