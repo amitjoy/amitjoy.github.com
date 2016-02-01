@@ -99,7 +99,7 @@ public final class Compressor {
 
 You can assume that it's gonna be simpler than the previous design patterns. We just have to write the client class to pass the concrete compression strategies as behaviors to **Compressor** constructor argument as it accepts the **SAM (Single Abstract Method)** Interface **CompressionStrategy**.
 
-### client
+### Client
 
 {% highlight java %}
 public final class Compressor {
