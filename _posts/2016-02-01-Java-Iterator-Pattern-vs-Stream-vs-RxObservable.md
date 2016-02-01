@@ -23,7 +23,7 @@ public final class IteratorPattern {
 	public static void main(final String[] args) {
 		final List<String> names = Lists.newArrayList("Java", "C", "C++", "PHP", "Go");
 		for (final Iterator iterator = names.iterator(); iterator.hasNext();) {
-			String language = (String) iterator.next();
+			final String language = (String) iterator.next();
 			System.out.println(language);
 		}
 	}
