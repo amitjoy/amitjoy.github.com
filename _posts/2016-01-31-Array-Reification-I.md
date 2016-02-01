@@ -87,4 +87,6 @@ Cannot create a generic array of List<String>
 
 ### Solution
 
-Best probable solution is to use any collection type to contain list of data.
+So, can't we use generic arrays for our purpose? No, we can use generic arrays but it is advisable to use any collection type to contain list of data which comprises more operations to be performed on it.
+
+I would love to discuss more on **Array Reification** in future posts to provide you with the actual example on using such kind of generic arrays.
