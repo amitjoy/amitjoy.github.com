@@ -19,7 +19,7 @@ I would like to focus on how to convert your current code to evaluate the functi
 
 ### What is Lazy Evaluation?
 
-Lazy evaluation can be considered as the computation is delayed util it is actually needed.
+Lazy evaluation can be considered as the computation is delayed util it is actually needed. Lazy evaluation can lead to reduction in memory footprint, since values are created when required.
 
 ### Example
 
