@@ -13,11 +13,11 @@ tags: [Java]
 
 ## Overview
 
-Reification signifies the run-time component representation. It means, it represents a type which can be completely represented at run-time.
+Reification signifies the run-time component representation. It means, it represents a type which can be completely represented at runtime.
 
 Eg, A primitive type, non-parameterized class or interface type, parameterized type of unbounded wildcard ({% highlight java %}List<?>{% endhighlight %}), raw type (List), Array whose component is reifiable ({% highlight java %}List<?>[], int[], List[]{% endhighlight %}).
 
-Arrays can reify their component types. It means array types can be represented properly in run time.
+Arrays can reify their component types. It means array types can be represented properly in runtime.
 
 ### Old School Example
 
@@ -35,7 +35,7 @@ public final class ArrayReification {
 
 Any clue about the problem that the application might encounter? <br />
 
-It suffers from **ArrayStoreException** at run-time because the actural array object has the component type of **Integer** which can not store any value of type **Double**.
+It suffers from **ArrayStoreException** at runtime because the actual array object has the component type of **Integer** which can not store any value of type **Double**.
 
 ### Parameterized Array
 
@@ -58,7 +58,7 @@ public final class Helper {
 
 Is the code correct? <br />
 
-The aforementioned code will have a compilation error.
+No, it's not. It will result in a compilation error.
 
 {% highlight java %}
 Cannot create a generic array of T
