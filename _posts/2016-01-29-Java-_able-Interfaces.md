@@ -39,7 +39,7 @@ If a class implements **java.lang.Readable** assures that it provides source of 
 
 ### Appendable
 
-This **java.lang.Appendable** interface specifies the contract to append character values to the implementing class object. As an example, the widely used **java.lang.StringBuffer** and **java.lang.StringBuilder** implement this interface.
+This **java.lang.Appendable** interface specifies the contract to append character values to the implementing class object. As an example, the widely used **java.lang.StringBuffer** and **java.lang.StringBuilder** implement this interface to mutate the sequence of characters.
 
 ### Closeable
 
