@@ -149,12 +149,12 @@ The problem lies in allowing each and every object to be a monitor. Instead, Jav
 
 ### Threadable : Not available but wish it were
 
-We all have seen that all the lower level threading API methods are in **java.lang.Object** class. But I believe it's a bad design decision. Instead, we could have had the threading related method in a specific class called **Threadable**. This would then conform to the **Single Responsibility Principle**.
+We all have seen that all the lower level threading API methods are in **java.lang.Object** class. But I believe it's a bad design decision. Instead, we could have had the threading related method in a specific class/interface called **Threadable**. This would then conform to the **Single Responsibility Principle**.
 
 ### Conclusion
 
-So far we have seen currently available and commonly used interfaces and classes which have a specific naming convention that end with **able** word. The main purpose of this article is to let people aware of such a requirement of Interfaces and Classes. I believe such a naming convention helps people write classes conforming to the **Single Responsibility Principle**. That means, your class name would convey actually the intent or the purpose of the class.
+So far we have seen currently available and commonly used interfaces and classes which have a specific naming convention that end with **able** word. The main purpose of this article is to let people aware of such a requirement of Interfaces and Classes. I believe such a naming convention helps people write classes/interfaces conforming to the **Single Responsibility Principle**. That means, your class/interface name would convey actually the intent or the purpose of the class/interace.
 
 Let's say we are developing an IDE. So, it is necessary to have huge array of actions or commands. We all have seen the specific command - **Undo**. The **Undo** operation is used to cancel the last applied command. Now, there can be lots of commands which can be cancelled using **Undo** operation and some which can't be cancelled using **Undo** operation. We can clearly see that for such a requirement of commands we need **Command Pattern** to be used. We can write an interface named **Undoable** which can comprise all the necessary code to undo or cancel a specific command. If any of the existing commands extend this interface would have the privilege to cancel or undo its operation.
 
-This is the reason I wrote this post to make people aware of the necessity of such a naming convention. It helps integrate a good design decision.
+This is the reason I wrote this post to make people aware of the necessity of such a naming convention. It helps people integrate a good design decision for the application. According to the **Open Closed Principle**, software entities (classes, modules, functions, etc.) must be open for extension and closed for modification. So, before developing any application, the integral task is to find common properties - eg. the **Undo** command in the previous example. I would advise you to follow such a naming convention to adapt a better integrated design approach.
