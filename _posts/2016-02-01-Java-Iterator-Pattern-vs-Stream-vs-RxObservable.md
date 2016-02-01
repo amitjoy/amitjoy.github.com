@@ -44,7 +44,7 @@ Java's Iterator Pattern is inherently sequential and pulls in each and every dat
 Java Stream API provided the functionality for internal iteration to overcome the challenges confronted by External Iterators. It is more concise and readable.
 
 {% highlight java %}
-public final class Externaliteration {
+public final class ExternalIteration {
 
 	public static void main(final String[] args) {
 		final List<String> names = Lists.newArrayList("Java", "C", "C++", "PHP", "Go");
@@ -89,7 +89,7 @@ public final class PushVSPull {
 		final Observable<String> observable = Observable.from(list);
 
 		observable.subscribe(System.out::println, System.out::println,
-				() -> System.out.println("We've finnished!"));
+				() -> System.out.println("We are done!"));
 	}
 
 	public void run() {
