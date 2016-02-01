@@ -13,7 +13,7 @@ tags: [Java]
 
 ## Overview
 
-While refactoring old code, you might have already encountered that the classes are inundated with lots of non-generic List. It is important for a codebase to evolve and that's why I would like to discuss about how to refactor your old non-generic List to generic List?
+While refactoring old code, you might have already encountered that the classes are inundated with lots of non-generic List. It is important for a codebase to evolve and that's why I would like to discuss about how to refactor your old non-generic List to generic List.
 
 ### Example
 
@@ -34,10 +34,4 @@ public final class UnchekedCast {
 
 Here, you can clearly see to cast a generic {% highlight java %}List<Object>{% endhighlight %} to {% highlight java %}List<String>{% endhighlight %}, we have to take 2 steps. Initially, we have to safely cast it to unbounded wildcard List and then to the actual {% highlight java %}List<String>{% endhighlight %}. The same method applies for non-generic List or raw type List as it is as same as {% highlight java %}List<Object>{% endhighlight %}.
 
-You would also get to see **Unchecked Cast** warning which informs you about the absence of **instanceof** check before each and every cast operation.
-
-###Important
-
-But remember, you can only check **instanceof** on **Reifiable Types**. Just to give you a glimpse on what Reifiable type means, it is a type which can be completely represented at run-time.
-
-Eg, A primitive type, non-parameterized class or interface type, parameterized type of unbounded wildcard ({% highlight java %}List<?>{% endhighlight %}), raw type (List), Array whose component is reifiable ({% highlight java %}List<?>[], int[], List[]{% endhighlight %}).
+You would also get to see **Unchecked Cast** warning which informs you about the presence of cast from a generic type to a non-qualified type or the vice versa.
