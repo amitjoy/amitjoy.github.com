@@ -55,6 +55,6 @@ Instead of striving too much to make your E4 application look beautiful, Jeeeyul
 
 9. Now select any of the customized default themes and from the toolbar, click on **Show CSS**
 
-10. Now copy the whole CSS and save it in the main E4 RCP Plugins’s CSS folder and link it in the step 5.
+10. Now copy the whole CSS and save it in the main E4 RCP Plugins’ CSS folder and link it in the step 5.
 
 11. Run and Voila!!!
