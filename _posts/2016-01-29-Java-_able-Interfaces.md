@@ -65,7 +65,7 @@ By implementing this interface, the class has the opportunity to compare the obj
 
 This interface is mainly used to facilitate users to provide Thread Task definition. The difficulty of using this SAM interface for Thread Task Definition is that it doesn't return any value.
 
-### Callable<V>
+### Callable
 
 This interface is also used to provide Thread Task definition in a parameterized way which has the capability to return the computed value as well.
 
