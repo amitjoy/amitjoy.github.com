@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Java -able Interfaces and Classes"
+title: "Commonly used Java -able Interfaces and Classes"
 author: amit
 modified:
 share: true
 comments: true
-excerpt: "The enumeration of commonly used Java interfaces that ends with -able"
+excerpt: "The enumeration of commonly used Java interfaces and classes that ends with -able"
 tags: [Java]
 ---
 
@@ -63,11 +63,11 @@ By implementing this interface, the class has the opportunity to compare the obj
 
 ### Runnable
 
-This interface is mainly used to facilitate users to provide Thread Task definition. This SAM Interface method doesn't return a value.
+This interface is mainly used to facilitate users to provide Thread Task definition. The difficulty of using this SAM interface for Thread Task Definition is that it doesn't return a value.
 
 ### Callable
 
-This interface is also used to provide Thread Task definition in a parameterized way which does return a value.
+This interface is also used to provide Thread Task definition in a parameterized way which does return a value a value as well.
 
 ### Repeatable
 
@@ -99,7 +99,7 @@ public final class Sample {
 
 Prior to Java 8, we could achieve the same by annotating TechnicalUniversity interface with an array of Places which looks a bit cluttered.
 
-### Synchronizable
+### Synchronizable : Not available but wish it were
 
 In a DZone Java entry by Lucas Eder, it has been mentioned that it could have been in the JDK if Java has been developed today.
 
@@ -147,6 +147,14 @@ What is the **problem**?
 
 The problem lies in allowing each and every object to be a monitor. Instead, Java could have provided a **Synchronizable** interface to allow specific objects which can only be used as monitors.
 
-### Threadable
+### Threadable : Not available but wish it were
 
 We all have seen that all the lower level threading API methods are in **java.lang.Object** class. But I believe it's a bad design decision. Instead, we could have had the threading related method in a specific class called **Threadable**. This would then conform to the **Single Responsibility Principle**.
+
+### Conclusion
+
+So far we have seen currently available and commonly used interfaces and classes which have a specific naming convention that end with **able** word. The main purpose of this article is to let people aware of such a requirement of Interfaces and Classes. I believe such a naming convention helps people write classes conforming to the **Single Responsibility Principle**. That means, your class name would convey actually the intent or the purpose of the class.
+
+Let's say we are developing an IDE. So, it is necessary to have huge array of actions or commands. We all have seen the specific command - **Undo**. The **Undo** operation is used to cancel the last applied command. Now, there can be lots of commands which can be cancelled using **Undo** operation and some which can't be cancelled using **Undo** operation. We can clearly see that for such a requirement of commands we need **Command Pattern** to be used. We can write an interface named **Undoable** which can comprise all the necessary code to undo or cancel a specific command. If any of the existing commands extend this interface would have the privilege to cancel or undo its operation.
+
+This is the reason I wrote this post to make people aware of the necessity of such a naming convention. It helps integrate a good design decision.
