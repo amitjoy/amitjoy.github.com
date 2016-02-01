@@ -39,21 +39,21 @@ Instead of striving too much to make your E4 application look beautiful, Jeeeyul
 
 2. Now, go to your main E4 RCP Plugin’s extension section.
 
-3. You have to add a property to org.eclipse.core.runtime.products extension.
+3. You have to add a property to **org.eclipse.core.runtime.products** extension.
 
-4. The property name: applicationCSS
+4. The property name: **applicationCSS**
 
-5. The value: platform:/plugin/[YOUR RCP PLUGIN ID]/css/jeeeyul.css
+5. The value: **platform:/plugin/[YOUR RCP PLUGIN ID]/css/jeeeyul.css**
 
 6. Basically the value points to the specific CSS file that you want to use for the rendering.
 
-    Now the question is how would you get the CSS.
+    Now the question is how you can get the CSS.
 
 7. It’s pretty simple. Go to Eclipse Preferences Section.
 
-8. Go to General -> Appearance -> Jeeeyul’s Themes
+8. Go to **General -> Appearance -> Jeeeyul’s Themes**
 
-9. Now select any of the customised default themes and from the toolbar, click on Show CSS
+9. Now select any of the customized default themes and from the toolbar, click on **Show CSS**
 
 10. Now copy the whole CSS and save it in the main E4 RCP Plugins’s CSS folder and link it in the step 5.
 
