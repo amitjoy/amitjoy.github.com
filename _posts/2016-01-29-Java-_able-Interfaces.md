@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Java -able Interfaces"
+title: "Java -able Interfaces and Classes"
 author: amit
 modified:
 share: true
 comments: true
-excerpt: "The enumeration of Java interfaces that ends with -able"
+excerpt: "The enumeration of commonly used Java interfaces that ends with -able"
 tags: [Java]
 ---
 
@@ -13,7 +13,7 @@ tags: [Java]
 
 ## Overview
 
-For a Java Developer, it is really important to know the huge array of interfaces which ends with -able in its names. So, why do we have interfaces with such a name? Is it really difficult to answer? I don't think so. We all know about interfaces like Serializable which assists a class object to be serialized. Apart from this, we still do have several interfaces which have such a naming convention.
+For a Java Developer, it is really important to know the huge array of interfaces and classes which ends with -able in its names. So, why do we have interfaces with such a name? Is it really difficult to answer? I don't think so. We all know about interfaces like **Serializable** which assists a class object to be serialized. Apart from this, we still do have several interfaces and classes which have such a naming convention.
 
 ### Serializable
 
@@ -63,7 +63,11 @@ By implementing this interface, the class has the opportunity to compare the obj
 
 ### Runnable
 
-This interface is mainly used to facilitate users to provide Thread Task definition.
+This interface is mainly used to facilitate users to provide Thread Task definition. This SAM Interface method doesn't return a value.
+
+### Callable
+
+This interface is also used to provide Thread Task definition in a parameterized way which does return a value.
 
 ### Repeatable
 
