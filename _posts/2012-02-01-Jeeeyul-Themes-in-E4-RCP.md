@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Jeeeyul’s Themes in your E4 RCP Application"
+title: "Jeeeyul Themes in your Eclipse 4 RCP Application"
 author: amit
 modified:
 share: true
@@ -19,23 +19,23 @@ Instead of striving too much to make your E4 application look beautiful, Jeeeyul
 
 1. Add all the 3 plugins required for rendering the CSS to your product features or plugins.
 
-* net.jeeeyul.eclipse.themes
-* net.jeeeyul.eclipse.themes.ui
-* net.jeeeyul.swtend
+    * net.jeeeyul.eclipse.themes
+    * net.jeeeyul.eclipse.themes.ui
+    * net.jeeeyul.swtend
 
-These 3 aforesaid plugins have several dependencies.
+      These 3 aforesaid plugins have several dependencies.
 
-* org.eclipse.jface.text
-* org.eclipse.text
-* org.eclipse.ui.editors
-* org.eclipse.ui.ide
-* org.eclipse.core.resources
-* org.eclipse.core.filesystem
-* org.eclipse.ui.workbench.texteditor
-* org.eclipse.compare.core
-* org.eclipse.core.filebuffers
+    * org.eclipse.jface.text
+    * org.eclipse.text
+    * org.eclipse.ui.editors
+    * org.eclipse.ui.ide
+    * org.eclipse.core.resources
+    * org.eclipse.core.filesystem
+    * org.eclipse.ui.workbench.texteditor
+    * org.eclipse.compare.core
+    * org.eclipse.core.filebuffers
 
-Do add those to your feature or plugin list in Product Configuration.
+      Do add those to your feature or plugin list in Product Configuration.
 
 2. Now, go to your main E4 RCP Plugin’s extension section.
 
@@ -47,7 +47,7 @@ Do add those to your feature or plugin list in Product Configuration.
 
 6. Basically the value points to the specific CSS file that you want to use for the rendering.
 
-Now the question is how would you get the CSS.
+    Now the question is how would you get the CSS.
 
 7. It’s pretty simple. Go to Eclipse Preferences Section.
 
