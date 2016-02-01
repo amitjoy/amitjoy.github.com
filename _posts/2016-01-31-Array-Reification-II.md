@@ -36,7 +36,7 @@ public final class Helper {
 }
 {% endhighlight %}
 
-If you run the afore-mentioned example in Java 1.8.0_71 (as it is the currently installed Java JDK in my local machine), you would encounter a **ClassCastException** in run-time.<br/>
+If you run the afore-mentioned example in Java 1.8.0_71 (as it is the currently installed Java JDK in my local machine), you would encounter a **ClassCastException** in run-time.
 
 Along with it, you would also encounter an **Unchecked Cast** warning as follows.
 
@@ -54,7 +54,7 @@ it clearly shows that Object array can not be casted to String array because the
 
 ### Principle of Truth in Advertising
 
-The reified type of an array must be a subtype of the erasure <br/>
+The reified type of an array must be a subtype of the erasure
 
 So, according to this, in the previous problem, T has been bound to String but the reified type of the array is still Object.
 
