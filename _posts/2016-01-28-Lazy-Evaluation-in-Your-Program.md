@@ -28,7 +28,7 @@ The following example is slightly modified in accordance with more readability.
 {% highlight java %}
 public final class Lazy<T> {
 
-  public static <T> Lazy<T> of() {
+	public static <T> Lazy<T> of() {
 		return new Lazy<>();
 	}
 
