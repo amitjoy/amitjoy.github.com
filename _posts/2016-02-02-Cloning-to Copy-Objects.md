@@ -298,7 +298,7 @@ The aforementioned code has been slightly modified by introducing identifier pro
 
 ### Problem
 
-Now, if we make our identifier property constant, then the clone method will report an error as it wouldn't be able to reassign value to a constant.
+Now, if we make our identifier property constant, then the clone method will report a compilation error as it wouldn't be able to reassign a value to a constant.
 
 {% highlight java %}
 public class Result implements Cloneable {
@@ -337,7 +337,7 @@ public class Result implements Cloneable {
 }
 {% endhighlight %}
 
-The following assignment will not work in case we change the **id** to a constant.
+The following assignment in the **clone** method will not work in case we change the **id** to a constant.
 
 {% highlight java %}
 result.id = _id++;
