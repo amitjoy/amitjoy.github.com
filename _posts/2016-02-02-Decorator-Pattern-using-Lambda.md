@@ -35,7 +35,7 @@ The following example has been taken from **SourceMaking**.
 
 ### The Problem Domain
 
-Let's say, in Berlin, Germany, we have an Agency, called **Eval**. The purpose of this agency is to verify residents of Berlin in regard to several validation criteria. The agency has defined several validation criteria to verify the residents. After 20 years of its operation, the agency has been acquired by a big firm in Zurich, Switzerland. Now, this big firm wants to add their own validation criteria to validate residents of Zurich.
+Let's say, in Berlin, Germany, we have an Agency, called **Eval**. The purpose of this agency is to evaluate residents of Berlin in regard to several validation criteria. The agency has defined several validation criteria to evaluate the residents. After 20 years of its operation, the agency has been acquired by a big firm in Zurich, Switzerland. Now, this big firm wants to add their own validation criteria to evaluate residents of Zurich.
 
 Now, to solve such a problem, we need to develop the application in such a way that it would facilitate extension to add more validators at runtime.
 
@@ -131,7 +131,7 @@ public final class Application {
 
 Now, as we said, **Decorator Pattern** is mainly used to add behavior at runtime, here in the aforementioned example, we can create any validator and pass it to the **decorateEvaluators** method call in **Application** class.
 
-The **decorateEvaluators** method accepts variable argument of functional interface **Function**. The purpose of this method is to combine all the functions to one single **Function** so that it can directly be applied to the **Candidate** for evaluation/validation.
+The **decorateEvaluators** method accepts variable argument of functional interface **Function**. The purpose of this method is to combine all the functions to one single **Function** so that it can directly be applied to the **Candidate** for evaluation.
 
 This pattern facilitates user to add behaviors to the object but not methods to the object's actual interface.
 The Object's actual interface remains untouched while the responsibilities get added to the object.
