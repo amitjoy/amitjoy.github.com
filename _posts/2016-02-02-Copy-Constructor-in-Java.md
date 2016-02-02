@@ -27,7 +27,6 @@ public final class Result {
 	private final int marks;
 
 	public Result(final int marks) {
-		super();
 		this.marks = marks;
 	}
 
@@ -52,11 +51,13 @@ public final class Student {
 
 	private final Result result;
 
-	public Student(final String name, final Result result) {
-		super();
-		this.name = name;
-		this.result = result;
-	}
+    public Student(final String name, final Result result) {
+  		checkNotNull(name);
+  		checkNotNull(result);
+
+  		this.name = name;
+  		this.result = result;
+  	}
 
 	public String getName() {
 		return this.name;
@@ -162,7 +163,6 @@ public final class Result {
 	private final int marks;
 
 	public Result(final int marks) {
-		super();
 		this.marks = marks;
 	}
 
@@ -191,11 +191,13 @@ public final class Student {
 
 	private final Result result;
 
-	public Student(final String name, final Result result) {
-		super();
-		this.name = name;
-		this.result = result;
-	}
+    public Student(final String name, final Result result) {
+  		checkNotNull(name);
+  		checkNotNull(result);
+
+  		this.name = name;
+  		this.result = result;
+  	}
 
 	public Student(final Student student) {
 		this.name = student.getName();
