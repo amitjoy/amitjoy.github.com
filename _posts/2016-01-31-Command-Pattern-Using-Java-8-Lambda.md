@@ -21,7 +21,7 @@ Due to the current inclusion of Java 8 Functional Programming Paradigm in today'
 	<img src="http://www.giandavidealfano.com/wp-content/uploads/2012/11/command_pattern.gif"></a>
 </figure>
 
-### The Problem
+### The Problem Domain
 
 An editor or IDE has gallons of actions or commands such as open, close, save etc. Each and every time, someone needs to develop a new command for the IDE, it should conform to the Open-Closed principle - Open for Extension and Closed for Modification. So, now our design decision should be effective enough to allow extensions to the applications so that anyone can easily plug-in new command to the IDE.
 

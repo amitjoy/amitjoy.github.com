@@ -21,7 +21,7 @@ We have previously seen about implementing Command Pattern using Java 8 Lambda e
 	<img src="http://www.uml-diagrams.org/examples/composite-structure-example-observer.png"></a>
 </figure>
 
-### The Problem
+### The Problem Domain
 
 The problem is taken from the book **Java 8 Lambdas by Richard Warburton**.
 

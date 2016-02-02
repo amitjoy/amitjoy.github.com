@@ -21,7 +21,7 @@ We have learnt already about how to implement Command and Observer patterns usin
 	<img src="https://static.dzone.com/dz1/dz-files/strategy_pattern.png"></a>
 </figure>
 
-### The Problem
+### The Problem Domain
 
 The problem is an excerpt from the book **Java 8 Lambdas by Richard Warburton**.
 
