@@ -6,7 +6,7 @@ modified:
 share: true
 comments: true
 excerpt: "The most reliable solution to copy objects in Java"
-tags: [Java, Copy Constructor, Clone]
+tags: [Java, Copy Constructor]
 ---
 
 {% include _toc.html %}
