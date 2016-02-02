@@ -6,7 +6,7 @@ modified:
 share: true
 comments: true
 excerpt: "The viability of Default Copy Constructor in Java"
-tags: [Java, Copy Constructor]
+tags: [Java, Copy Constructor, Clone]
 ---
 
 {% include _toc.html %}

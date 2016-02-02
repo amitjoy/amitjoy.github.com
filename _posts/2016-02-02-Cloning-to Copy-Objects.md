@@ -6,7 +6,7 @@ modified:
 share: true
 comments: true
 excerpt: "The temporary solution to copy objects in Java"
-tags: [Java, Copy Constructor]
+tags: [Java, Copy Constructor, Clone]
 ---
 
 {% include _toc.html %}
@@ -64,7 +64,7 @@ public class Result {
 public final class ExcellentResult extends Result {
 
 	public ExcellentResult(final ExcellentResult result) {
-		super(result.getMarks());
+		super(result);
 	}
 
 	public ExcellentResult(final int marks) {
