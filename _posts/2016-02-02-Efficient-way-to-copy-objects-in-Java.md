@@ -159,4 +159,4 @@ Now, if we execute the aforementioned client application, we can see that the cu
 
 ### Solution
 
-Our approach should be to combine both the copy constructor and the clone method to deep copy an object in Java.
+Our approach should be to combine both the **Copy Constructor** and the **clone** method to deep copy an object in Java.
