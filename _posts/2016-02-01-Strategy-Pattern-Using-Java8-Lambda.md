@@ -129,3 +129,7 @@ public final class Compressor {
 
 }
 {% endhighlight %}
+
+### Conclusion
+
+Using **Strategy Pattern**, the user can change or alter the algorithms that the client application is using.
