@@ -248,7 +248,9 @@ But the problem lies in maintainability.
 
 Let's say we have a requirement to add another new property to the **Result** class, namely **Grade**. This procedure of adding **Copy Constructor** to each and every class has to be done.
 
-Let's consider another example. If we have several different kinds of **Result** types then in **Student** copy constructor we have to have an **instanceof** test on each and every type of **Result** instance which eventually makes the code less readable and error-prone.
+Let's consider another example. If we have several different kinds of **Result** types then in **Student** copy constructor we have to have an **instanceof** type check on each and every type of **Result** instance which eventually makes the code less readable, error-prone and not extensible.
+
+This violates **Open-Closed Principle**.
 
 ### Solution
 
