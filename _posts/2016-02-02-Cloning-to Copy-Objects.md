@@ -21,7 +21,7 @@ Today I am going to discuss about the temporary solution to copying objects in J
 
 The problem we have faced regarding our previous solution is maintainability.
 
-1. Let's say we have a requirement to add another new property to the **Result** class, namely **Grade**. This procedure of adding **Copy Constructor** to each and every class has to be done.
+1. Let's say we have a requirement to add another new property to the **Result** class, namely **Grade**. The hassles of adding **Copy Constructor** to each and every class has to be endured.
 
 2. Let's consider another example. If we have several different kinds of **Result** types then in **Student** copy constructor we have to have an **instanceof** test on each and every type of **Result** instance which eventually makes the code less readable, error-prone and not-extensible.
 
@@ -29,7 +29,7 @@ The previous solution also violates **Open-Closed Principle** and hence it is no
 
 ### Snippet
 
-Let's start with some more concrete types of **Result*s.
+Let's start with some more concrete types of **Result**s.
 
 ### Result POJO
 
@@ -117,13 +117,13 @@ public final class Student {
 }
 {% endhighlight %}
 
-Here, in this class, we have to add all the different **instanceof** test to check for actual **Result** instance before delegating it to the copy constructor method.
+Here, in this class, we needed to add all the different **instanceof** tests to check for actual **Result** instance before delegating it to the copy constructor.
 
-Unless, we will end up confronting the same problem of **Shallow Copy**.
+Otherwise, we will end up confronting the same problem of **Shallow Copy**.
 
 ## Solution - Clone
 
-In the **Object** class, we have a method **clone** which we can make use of in case of copying objects.
+In the **Object** class, we have a method **clone** which we can utilize in case of copying objects.
 
 ### Result POJO
 
@@ -198,7 +198,7 @@ public final class Student implements Cloneable {
 }
 {% endhighlight %}
 
-In **Student** class, we have inherited the **clone** method and implemented it accordingly by copying the properties. But you can see that I have passed a newly cloned **Result** object to the constructor argument. Due to this, we achieve **Deep Copying** so that we make sure each and every newly cloned **Student** object will contain a newly cloned **Result** instance.
+In **Student** class, we have inherited the **clone** method and implemented it accordingly by copying the properties. But you can see that I have invoked **clone** method on the contained **Result** instance. Due to this, we achieve **Deep Copying** so that we make sure each and every newly cloned **Student** object will contain a newly cloned **Result** instance.
 
 ### The differences
 
@@ -225,9 +225,9 @@ public final class ExcellentResult extends Result {
 }
 {% endhighlight %}
 
-According to the definition of **clone** method in **Result** class, it will automatically handle the runtime type of any **Result** type and it will invoke the respective **clone** method from any subtype of **Result** class. This occurs because methods are polymorphic in nature.
+According to the definition of **clone** method in **Result** class, it will automatically handle the runtime type of any **Result** type and it will invoke the respective **clone** method from the specific subtype of **Result** class. This occurs because methods are polymorphic in nature.
 
-In the previous solution, we introduced **Default Copy Constructor** which used to create respective objects using **new** keyword. In Java, **new** is not at all polymorphic in nature and that's why we had to introduce the **instanceof** type check to verify the runtime type of any specific **Result** class.
+In the previous solution, we introduced **Default Copy Constructor** which used to create respective objects using **new** keyword. In Java, **new** is not at all polymorphic in nature and that's why we had to introduce the **instanceof** type check to verify the runtime type of any specific **Result** instance.
 
 ### Client Application
 
@@ -294,7 +294,7 @@ public class Result implements Cloneable {
 }
 {% endhighlight %}
 
-The aforementioned code has been slightly modified by introducing identifier property to the **Result** class. The **clone** method has been modified according to cope up with the recent changes.
+The aforementioned code has been slightly modified by introducing identifier property to the **Result** class. The **clone** method has been modified to cope up with the recent changes.
 
 ### Problem
 
