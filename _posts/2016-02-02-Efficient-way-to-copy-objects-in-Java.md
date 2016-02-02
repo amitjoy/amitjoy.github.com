@@ -134,6 +134,8 @@ public final class Student implements Cloneable {
 }
 {% endhighlight %}
 
+Pretty much same as we did for **Result** and its derived **ExcellentResult** class.
+
 ### Client Application
 
 {% highlight java %}
@@ -154,3 +156,7 @@ public class MixedApproachInCloning {
 ### Benefits
 
 Now, if we execute the aforementioned client application, we can see that the current implementation is conforming to our **Deep Copy** paradigm. Even though **new** is not polymorphic, at runtime the polymorphic **clone** method invokes the actual **copy constructor** on the runtime type of **Result** object.
+
+### Solution
+
+Our approach should be to combine both the copy constructor and the clone method to deep copy an object in Java.
