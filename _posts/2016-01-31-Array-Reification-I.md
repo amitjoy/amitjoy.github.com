@@ -13,11 +13,11 @@ tags: [Java]
 
 ## Overview
 
-Reification signifies the run-time component representation. It means, it represents a type which can be completely represented at runtime.
+Reification signifies the runtime component representation. Any type which can be completely represented at runtime is known as **Reifiable Type**
 
 Eg, A primitive type, non-parameterized class or interface type, parameterized type of unbounded wildcard ({% highlight java %}List<?>{% endhighlight %}), raw type (List), Array whose component is reifiable ({% highlight java %}List<?>[], int[], List[]{% endhighlight %}).
 
-Arrays can reify their component types. It means array types can be represented properly in runtime.
+Arrays can reify their component types. It means array types can be represented properly at runtime.
 
 ### Old School Example
 
@@ -64,7 +64,7 @@ No, it's not. It will result in a compilation error.
 Cannot create a generic array of T
 {% endhighlight %}
 
-The error occurs due to the type variable of not being a reifiable type. <br />
+The error occurs due to the type variable of not being a reifiable type. Hence, it reports compilation error at the generic array creation line in the snippet.
 
 Let's look at another example.
 
@@ -85,8 +85,10 @@ This program also suffers from the same compilation error.
 Cannot create a generic array of List<String>
 {% endhighlight %}
 
+The error happens because **List&lt;String%gt;** is not a reifiable type.
+
 ### Solution
 
 So, can't we use generic arrays for our purpose? No, we can use generic arrays but it is advisable to use any collection type to contain list of data which comprises more operations to be performed on the data container.
 
-I would love to discuss more on **Array Reification** in future posts to cover some of the important aspects.
+I just wanted not to get you inundated with each and every aspect of **Array Reification**, I kept this post as small as possible so that you can learn gradually. I would love to discuss more on **Array Reification** in my future posts to cover some of the important aspects on it.
