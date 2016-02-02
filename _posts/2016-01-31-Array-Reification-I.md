@@ -33,13 +33,13 @@ public final class ArrayReification {
 }
 {% endhighlight %}
 
-Any clue about the problem that the application might encounter? <br />
+*Any clue about the problem that the application might encounter?*
 
 It suffers from **ArrayStoreException** at runtime because the actual array object has the component type of **Integer** which can not store any value of type **Double**.
 
 ### Parameterized Array
 
-Let's have a look at the following problem now.
+Let's have a look at the following snippet to transform a collection to an array..
 
 {% highlight java %}
 public final class Helper {
@@ -56,7 +56,7 @@ public final class Helper {
 }
 {% endhighlight %}
 
-Is the code correct? <br />
+*Is the code correct?*
 
 No, it's not. It will result in a compilation error.
 
@@ -89,4 +89,4 @@ Cannot create a generic array of List<String>
 
 So, can't we use generic arrays for our purpose? No, we can use generic arrays but it is advisable to use any collection type to contain list of data which comprises more operations to be performed on the data container.
 
-I would love to discuss more on **Array Reification** in future posts to provide you with the actual solution on using such kind of generic arrays.
+I would love to discuss more on **Array Reification** in future posts to cover some of the important aspects.
