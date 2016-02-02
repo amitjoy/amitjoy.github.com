@@ -51,13 +51,13 @@ public final class Student {
 
 	private final Result result;
 
-    public Student(final String name, final Result result) {
-  		checkNotNull(name);
-  		checkNotNull(result);
+	public Student(final String name, final Result result) {
+		checkNotNull(name);
+		checkNotNull(result);
 
-  		this.name = name;
-  		this.result = result;
-  	}
+		this.name = name;
+		this.result = result;
+	}
 
 	public String getName() {
 		return this.name;
@@ -191,13 +191,13 @@ public final class Student {
 
 	private final Result result;
 
-    public Student(final String name, final Result result) {
-  		checkNotNull(name);
-  		checkNotNull(result);
+	public Student(final String name, final Result result) {
+		checkNotNull(name);
+		checkNotNull(result);
 
-  		this.name = name;
-  		this.result = result;
-  	}
+		this.name = name;
+		this.result = result;
+	}
 
 	public Student(final Student student) {
 		this.name = student.getName();
