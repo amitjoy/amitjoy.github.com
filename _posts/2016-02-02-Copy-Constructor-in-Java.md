@@ -139,12 +139,14 @@ But think, Java could have given us a **Default Copy Constructor** like this but
 
 *Why?* Because of the perils in **Shallow Copy**
 
-**Shallow Copy**
+## Shallow Copy
 
-If you write the same program in C++ and try to use the default constructor to copy the object for student1 to student2, it would copy the complete object of student1. But it won't copy the actual object of result which the object of student1 holds. It will only have a pointer to the previous object.
+If you write the same program in C++ and try to use the default constructor to copy the object of student1 to student2, it would copy the complete object of student1. But it won't copy the actual object of result which the object of student1 holds. It will only have a pointer to the previous object (result).
 
 
 student1 ------------------> result <------------------- student2
+
+Here, student1 refers to a **Student** object which contains a **Result** object reference. Now, student2 will refer to a completely new **Student** object but this new **Student** object will still contain the **Result** reference to the old **Result** object. So, you can clearly see that the objects are not deeply copied but the references.
 
 Due to this peril in copying object, Java didn't provide the **Default Copy Constructor**.
 
