@@ -17,7 +17,7 @@ I have previously discussed about different dimensions in **Array Reification**.
 
 ### Problem Domain
 
-Let's consider, we have to store many list of results to an array container. We can write our program the following way.
+Let's consider, we have to store several lists of results to an array container. We can write our program the following way.
 
 {% highlight java %}
 public final class IndecentExposure {
@@ -69,7 +69,7 @@ public final class IndecentExposure {
 
 We have previously seen that generic array creation is not possible and that's the reason we needed to use the raw type **List** to create the container and then we casted it to the required type.
 
-Now, we we tried to retrieve the value from the container, we would encounter **Class cast exception** as the aforementioned code, replaces the first element of the array with a list of doubles.
+Now, if we try to retrieve the value from the container, we would encounter **Class cast exception** as the aforementioned code replaces the first element of the array with a list of doubles.
 
 ### Principle of Indecent Exposure
 
