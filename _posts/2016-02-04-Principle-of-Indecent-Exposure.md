@@ -71,7 +71,7 @@ We have previously seen that generic array creation is not possible and that's t
 
 Now, if we try to retrieve the value from the container, we would encounter **Class cast exception** as the aforementioned code replaces the first element of the array with a list of doubles.
 
-You can see that here we have an array whose component type is **List&lt;Integer&gt;**. As the component type is not reifiable, the array accepted a **List&lt; extends Number&gt;**. For which, the first element of the array got replaced by a list of doubles at runtime.
+You can see that here we have an array whose component type is **List&lt;Integer&gt;**. As the component type is not reifiable, the array accepted a **List&lt;? extends Number&gt;**. For which, the first element of the array got replaced by a list of doubles at runtime.
 
 ### Principle of Indecent Exposure
 
