@@ -17,7 +17,7 @@ I have previously discussed about different dimensions in **Array Reification**.
 
 ### Problem Domain
 
-Let's consider, we have to store several lists of results to an array container. We can write our program the following way.
+Let's consider, we have a requirement to store several lists of results in an array container. We can write our program the following way.
 
 {% highlight java %}
 public final class IndecentExposure {
@@ -53,7 +53,7 @@ public final class IndecentExposure {
 	}
 
 	public static List<Integer>[] studentMarksLists() {
-		final List<Integer>[] studentMarksLists = new List[2];
+		final List<Integer>[] studentMarksLists = (List<Integer>[]) new List[2];
 
 		final List<Integer> samMarks = Lists.newArrayList(40, 30, 48, 22, 98);
 		final List<Integer> deanMarks = Lists.newArrayList(73, 98, 22, 73, 45);
@@ -71,9 +71,11 @@ We have previously seen that generic array creation is not possible and that's t
 
 Now, if we try to retrieve the value from the container, we would encounter **Class cast exception** as the aforementioned code replaces the first element of the array with a list of doubles.
 
+You can see that here we have an array whose component type is **List&lt;Integer&&gt;**. As the component type is not reifiable, the array accepted a **List&lt? extends Number&gt;**. For which, the first element of the array got replaced by a list of doubles at runtime.
+
 ### Principle of Indecent Exposure
 
-Do not expose any array publicly whose compile-time component type in not refiable.
+Do not expose any array publicly whose compile-time component type in not reifiable.
 
 ### Principle of Truth in Advertising and Principle of Indecent Exposure
 
