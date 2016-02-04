@@ -65,7 +65,7 @@ So, according to this principle, in the previous problem, **T** has been bound t
 
 *Casts inserted automatically by erasure will never fail unless your application code has Unchecked Cast Warning message*
 
-This clearly states that due to erasure, the casts will never fail in runtime unless your code has the **Unchecked Cast Warning** messages and in our example, we do have an **Unchecked Warning** which causes the **ClassCastException** in runtime.
+This clearly states that due to erasure, the casts will never fail in runtime unless your code has the **Unchecked Cast Warning** messages and in our example, we do have an **Unchecked Cast Warning** which causes the **ClassCastException** in runtime.
 
 ### Unchecked Cast Warning
 
