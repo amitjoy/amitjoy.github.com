@@ -57,7 +57,7 @@ it clearly states that **Object array** can not be casted to **String array** be
 
 ### Principle of Truth in Advertising
 
-*The reified type of an array must be a subtype of the erasure*
+*The reified type of an array must be a subtype of its erasure*
 
 So, according to this principle, in the previous problem, **T** has been bound to **String** but the reified type of the array is still **Object** and hence the exception occurs.
 

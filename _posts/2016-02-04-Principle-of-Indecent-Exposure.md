@@ -75,7 +75,7 @@ You can see that here we have an array whose component type is **List&lt;Integer
 
 ### Principle of Indecent Exposure
 
-Do not expose any array publicly whose compile-time component type in not reifiable.
+*Do not expose any array publicly whose compile-time component type in not reifiable*
 
 ### Principle of Truth in Advertising and Principle of Indecent Exposure
 
