@@ -57,7 +57,7 @@ final SpiderChartViewer viewer = SpiderChartBuilder.config(shell, settings -> {
 });
 {% endhighlight %}
 
-### Sample Output
+### Sample Usage
 
 <figure>
 	<img src="http://s8.postimg.org/708bj2jhh/Screen_Shot_2016_02_06_at_11_34_58_AM.png">
