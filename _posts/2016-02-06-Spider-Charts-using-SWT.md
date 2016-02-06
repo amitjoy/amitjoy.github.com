@@ -31,7 +31,7 @@ To overcome the difficulties in generating **Spider Charts**, I have started off
 
 In addition to it, I have incorporated Java 8's Fluent API to use the library in more efficient way.
 
-### Sample Program
+### Sample Usage
 
 {% highlight java %}
 // Create the objects of the classes implementing ISpiderChartPlottable
@@ -57,7 +57,7 @@ final SpiderChartViewer viewer = SpiderChartBuilder.config(shell, settings -> {
 });
 {% endhighlight %}
 
-### Sample Usage
+### Sample Output
 
 <figure>
 	<img src="http://s8.postimg.org/708bj2jhh/Screen_Shot_2016_02_06_at_11_34_58_AM.png">
