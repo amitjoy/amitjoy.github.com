@@ -27,9 +27,9 @@ Unfortunately I haven't found any solution yet that is only targeted to generate
 
 ### Spider Chart SWT
 
-To overcome the difficulties in generating **Spider Charts**, I have started off with a basic library that would only generate **Spider Chart**.
+To overcome the difficulties in generating **Spider Charts**, I have started off with a basic library that would only generate **Spider Charts**.
 
-I have incorporated Java 8's Fluent API to use the library in more efficient way.
+In addition to it, I have incorporated Java 8's Fluent API to use the library in more efficient way.
 
 ### Sample Program
 
@@ -67,4 +67,4 @@ final SpiderChartViewer viewer = SpiderChartBuilder.config(shell, settings -> {
 
 <a markdown="0" href="https://github.com/amitjoy/Spider-Chart-SWT.git" class="btn" target="_blank">Spider Chart SWT</a>
 
-**N.B:** Pull Requests are encouraged
+**N.B:** Pull Requests are encouraged. :)
