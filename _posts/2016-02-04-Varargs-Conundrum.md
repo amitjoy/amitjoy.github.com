@@ -93,7 +93,7 @@ This will still report a compilation error. Due to the generic type check before
 
 {% highlight java %}
 Type mismatch: cannot convert from List<List<? extends Number&Comparable<?>>> to List<List<Integer>>
- {% endhighlight %}
+{% endhighlight %}
 
 ### Snippet 2
 
@@ -114,4 +114,4 @@ Now, we have written an equivalence snippet in which we used raw **List** array.
 
 ### Conclusion
 
-In general, the use of **varargs** would impose more danger than the comfort it can offer. It's always preferable to use **ArrayList** in lieu of **varargs**.
+In general, the use of **varargs** would impose more danger than the comforts it can offer. It's always preferable to use **ArrayList** in lieu of **varargs**.
