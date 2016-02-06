@@ -47,6 +47,6 @@ This is a **Java Specification Request** to add new features relating to **Monet
 
 ### Reading Material
 
-I have found an extensive guide written by the actual developer. It covers all the nitty gritty details of Java Money API.
+I have found an extensive guide written by the one of the developers of **Java Money**. It covers all the nitty gritty details of **Java Money API**.
 
 <a markdown="0" href="https://otaviojava.gitbooks.io/money-api/" class="btn" target="_blank">Java Money</a>
