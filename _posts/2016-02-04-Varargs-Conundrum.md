@@ -13,7 +13,7 @@ tags: [Java, Generics]
 
 ## Overview
 
-At some point, we all have used variable arguments using Java. Sometimes we find it very helpful but to be frank, it is not as friendly as you think. It might incur several hassles during application development.
+At some point, we all have used variable arguments using Java. Sometimes we find it very useful but to be frank, it is not as friendly as you think. It might incur several hassles during application development.
 
 ### Generic Array Creation
 
@@ -30,9 +30,9 @@ public final class Varargs {
 }
 {% endhighlight %}
 
-While wriitng programs, we, developers are inclined to utilize such helper methods (**asist(E...)**). Basically the arguments as passed to the **asList(E...)** are stored in an array.
+While writing programs, we, developers are inclined to utilize such helper methods (**asList(E...)**) quite often. Basically the arguments as passed to the **asList(E...)** are stored in an array.
 
-Now let's look at the equivalent.
+Now let's look at the equivalent snippet.
 
 ### Generic Array Creation - Equivalence
 
@@ -51,7 +51,9 @@ public final class Varargs2 {
 
 *Will this program compile?*
 
-No, it won't. If you have gone through my posts on **Array Reification**, then you might remember that **Generic Array Creation** on non-refiable component type is not possible. So how do you make the snippet work?
+No, it won't. If you have gone through my posts on **Array Reification**, then you might remember that **Generic Array Creation** on non-refiable component type is not possible.
+
+*So how do you make the snippet work?*
 
 {% highlight java %}
 public final class Varargs2 {
@@ -66,9 +68,9 @@ public final class Varargs2 {
 }
 {% endhighlight %}
 
-It's simple, right? Just use raw type while array creation. But still, you would encounter the well-known **Unchecked Cast Warning** message.
+It's simple, right? Just use raw type of **List** while array creation. But still, you would encounter the well-known **Unchecked Cast Warning** message.
 
-Let's try to mold the program a bit to see some interesting facts.
+Let's try to change the program a bit to see some interesting facts.
 
 ### Snippet 1
 
@@ -108,8 +110,8 @@ public final class Varargs3 {
 }
 {% endhighlight %}
 
-Now, we have written an equivalence snippet in which we used raw **List** array creation. Due to this, we can see that the **List** array would accept the list of doubles. We can clearly see that the aforementioned snippet bypassed the generic type check.
+Now, we have written an equivalence snippet in which we used raw **List** array. Due to this, we can see that the **List** array would accept the list of doubles. We can clearly see that the aforementioned snippet bypassed the generic type check.
 
 ### Conclusion
 
-In general, the use of varargs would impose more danger than the comfort it can offer. It's always preferable to use **ArrayList** in lieu of **varargs**.
+In general, the use of **varargs** would impose more danger than the comfort it can offer. It's always preferable to use **ArrayList** in lieu of **varargs**.
