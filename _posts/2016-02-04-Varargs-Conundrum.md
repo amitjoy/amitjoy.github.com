@@ -5,7 +5,7 @@ author: amit
 modified:
 share: true
 comments: true
-excerpt: "The quirks in Variable Arguments in Java"
+excerpt: "The Quirks in Variable Arguments in Java"
 tags: [Java, Generics]
 ---
 
