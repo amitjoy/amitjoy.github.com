@@ -43,7 +43,7 @@ The problem lies in writing too much boiler-plate code which makes it hard to ma
 
 ### JSR 354
 
-This is a **Java Specification Request** to add new features relating to **Monetary** computations.
+This is a **Java Specification Request** to add new features relating to **Monetary** computations. It facilitates developer to write manageable codes.
 
 ### Reading Material
 
