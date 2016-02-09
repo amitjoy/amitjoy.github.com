@@ -27,7 +27,7 @@ I have previously talked about the benefits of using OSGi enRoute for rapid appl
 
 Let's have a look on few snippets on how to use them.
 
-##OSGi Annotations
+## OSGi Annotations
 
 ### @Component
 
