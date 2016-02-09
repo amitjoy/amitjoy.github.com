@@ -84,7 +84,7 @@ This annotation is used to categorize the bundle by providing the comma-separate
 
 ### @BundleContributors
 
-It says it all. You can use it to mention the list of contributors. The runtime bundle manifest will comprise *Bundle-Contributors** header.
+It says it all. You can use it to mention the list of contributors. The runtime bundle manifest will comprise **Bundle-Contributors** header.
 
 ### @BundleCopyright
 
@@ -100,11 +100,11 @@ Used to generate **Bundle-DocURL** header comprising URL pointing to documentati
 
 ### @BundleLicense
 
-it generates **Bundle-License** header which comprises the licensing information for the bundle distribution.
+It generates **Bundle-License** header which comprises the licensing information for the bundle distribution.
 
-### License Annotation
+### License Annotations
 
-OSGi enRoute includes some license specific annotation which indicates that the annotated class depends on the
+OSGi enRoute includes some license specific annotations which indicate that the annotated class depends on the
 specified license.
 
 For example,
@@ -122,7 +122,7 @@ In addition to it, it provides huge array of licenses such as Apache Lincense, G
 
 ### @RequireCapability
 
-This annotation is used to annotate other annotations define the requirement and capabilities of a bundle.
+This annotation is used to annotate other annotations to define the requirement and capabilities of a bundle.
 
 {% highlight java %}
 @RequireCapability(ns = ExtenderNamespace.EXTENDER_NAMESPACE, filter = "(&(" + ExtenderNamespace.EXTENDER_NAMESPACE
@@ -155,8 +155,8 @@ This class **MQTTLedApplication** is annotated with **RequireWebServerExtender**
 
 ### @ProvideCapability
 
-It works the same way **@RequireCapability** works, instead it provides a capability a runtime.
+It works the same way as **@RequireCapability** works, instead it provides a capability at runtime.
 
 ### OSGi enRoute Specific
 
-OSGi enRoute has taken the responsibility to take the hassles of OSGi Application Development off our shoulder. It provides all necessary abstraction to develop rapid OSGi applications. Amongst its several benefits, it provides huge array of annotations for **Angular JS Application** development, Scheduling, Authentication and Authorization etc.
+OSGi enRoute has taken the responsibility to take the hassles of OSGi Application Development off our shoulder. It provides all necessary abstractions to develop rapid OSGi applications. Amongst its several benefits, it provides huge array of annotations for **Angular JS Application** development, Scheduling, Authentication and Authorization, IoT Application Development etc.
