@@ -47,6 +47,65 @@ public final class MQTTLedApplication implements ManagedService, REST {
 
 This annotation is used to annotate a class which would be used as a **Declarative Service Component**. By default, it would expose this component as service implementations of the interfaces that it implements. Here, the service interfaces are **Managed Service** and **REST**.
 
+### @Reference
+
+{% highlight java %}
+@Designate(ocd = LedGpioConfiguration.class)
+@Component(name = "osgi.enroute.examples.led.controller.core")
+public final class LedController implements ILedController, ConfigurationListener {
+
+	/**
+	 * Configuration Settings Holder
+	 */
+	private static Pin configurablePin;
+
+	/**
+	 * GPIO Configuration Service PID
+	 */
+	private static final String GPIO_CONF_PID = "osgi.enroute.examples.led.controller.core";
+
+	/**
+	 * Configuration Admin Service Reference
+	 */
+	@Reference
+	private volatile ConfigurationAdmin configurationAdmin;
+  .....
+}
+{% endhighlight %}
+
+**@Reference** is used to inject OSGi service dependencies dynamically. Finally no pain in creating declarative service component descriptor file to inject such dependencies.
+
+### @Activate
+
+This annotation is closely related to service components. You can annotate methods with this annotation to mark it as an activator method for the **Service Component**
+
+{% highlight java %}
+@Designate(ocd = LedGpioConfiguration.class)
+@Component(name = "osgi.enroute.examples.led.controller.core")
+public final class LedController implements ILedController, ConfigurationListener {
+....
+/**
+	 * Activation Callback
+	 */
+	@Activate
+	public void activate() throws IOException {
+		try {
+			this.gpio = GpioFactory.getInstance();
+		} catch (final Throwable e) {
+			this.logService.log(LOG_ERROR, "pi4j native library missing");
+		}
+
+		if (nonNull(this.configurationAdmin)) {
+			this.gpioConfiguration = this.configurationAdmin.getConfiguration(GPIO_CONF_PID);
+		}
+	}
+.....
+{% endhighlight %}
+
+### @Deactivate
+
+This can be used to annotate methods to mark as a deactivator method in **Service Component**.
+
 ### @ObjectClassDefinition and @AttributeDefinition
 
 {% highlight java %}
