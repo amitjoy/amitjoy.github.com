@@ -19,7 +19,7 @@ In addition, Java 5 has introduced lots of new thread-safe collections such as *
 
 ### Benefits
 
-The benefits of using these concurrent collections remove the requirement of client side locking. Even external synchronization is not required at all while using these concurrent collections. For improved thread-safety, the concurrent collections yield better performance. And hence, it is advisable to use such collections whenever we need.
+The benefits of using these concurrent collections includes internal synchronization. Programmers don't require to impose client side locking. This kind of external synchronization is not required at all while using these concurrent collections. For improved thread-safety, the concurrent collections yield better performance. And hence, it is advisable to use such collections whenever we need.
 
 ## Mechanisms
 
