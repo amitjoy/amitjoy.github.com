@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Kura Wires: Industry 4.0 with Eclipse Kura"
+title: "Kura Wires"
 author: amit
 modified:
 share: true
 comments: true
-excerpt: "Kura Wires: Industry 4.0 with Eclipse Kura"
+excerpt: "Industry 4.0 with Eclipse Kura"
 tags: [Eclipse Kura, Kura Wires, OSGi]
 ---
 
@@ -28,12 +28,14 @@ Eclipse Kura is soon offering a new feature, called **Kura Wires** essentially f
 
 Kura Wires incorporates Dataflow Programming Model in which every node in a dataflow garph represents either the field objects attached to an IoT service gateway or any computation capability to act upon the data from the field object. A developer can make use of Kura Wires to **visually** or **programmatically** connect blocks instances together, in order to define a dataflow graph that will consume data, process it and, eventually, publish it to the cloud.
 
-##EclipseCON Talk
+## EclipseCON Talk
 
 Due to the recent development of Kura Wires, I have proposed a session on Kura Wires in EclipseCON 2016. The talk on Kura Wires comprises a session with a comrehensive presentation of real Industry 4.0 use cases that will utilize sensors connected via Modbus or OPC-UA. The use-case scenarios would be modeled and implemented using Kura Wires with a complete dataflow model.
+
+The Talk Link: https://www.eclipsecon.org/europe2016/session/industry-40-eclipse-kura
 
 ## Conclusion
 
 During our research on Kura Wires, we have so far discovered the benefits of our approach which Kura Wires follows. We believe in industrial environment, it would help the IIoT deliver on its promise of improved operational efficiency through such application.
 
-There Will Be More To Come Soon...
+**There Will Be More To Come Soon...**
