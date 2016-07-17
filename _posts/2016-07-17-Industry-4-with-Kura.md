@@ -20,11 +20,11 @@ and securely delivering data across the public domain at a much larger scale tha
 
 ## Eclipse Kura in IIoT
 
-Eclipse Kura is an Eclipse IoT Open Source project that provides a platform for building IoT service gateways. It is a smart application container that enables remote management of such service gateways and provides a wide range of APIs for allowing you to write and deploy your own IoT application.
+In the context of IoT application development, Eclipse Kura is an Eclipse IoT Open Source project that provides a platform for building IoT service gateways. It is a smart application container that enables remote management of such service gateways and provides a wide range of APIs for allowing you to write and deploy your own IoT application.
 
 ### Kura Wires
 
-Eclipse Kura is soon offering a new feature, called **Kura Wires** essentially focuses on preventing users from having to continually reinvent the wheel. The objective of Kura Wires is to wire reusable components together which eventually allows configurable cooperation between these components.
+To overcome some challenges incorporated in building Industrial IoT applications, Eclipse Kura is soon offering a new feature, called **Kura Wires** essentially focuses on preventing users from having to continually reinvent the wheel. The objective of Kura Wires is to wire reusable components together which eventually allows configurable cooperation between these components.
 
 Kura Wires incorporates Dataflow Programming Model in which every node in a dataflow garph represents either the field objects attached to an IoT service gateway or any computational capability to act upon the data from the field object. A developer can make use of Kura Wires to **visually** or **programmatically** connect blocks instances together, in order to define a dataflow graph that will consume data, process it and, eventually, publish it to the cloud.
 
