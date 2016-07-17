@@ -32,7 +32,7 @@ Kura Wires incorporates Dataflow Programming Model in which every node in a data
 
 Due to the recent development of Kura Wires, I have proposed a session on Kura Wires in EclipseCON 2016. The talk on Kura Wires comprises a session with a comrehensive presentation of real Industry 4.0 use cases that will utilize sensors connected via Modbus or OPC-UA. The use-case scenarios would be modeled and implemented using Kura Wires with a complete dataflow model.
 
-The Talk Link: https://www.eclipsecon.org/europe2016/session/industry-40-eclipse-kura
+[The EclipseCON Talk Link](https://www.eclipsecon.org/europe2016/session/industry-40-eclipse-kura)
 
 ## Conclusion
 
