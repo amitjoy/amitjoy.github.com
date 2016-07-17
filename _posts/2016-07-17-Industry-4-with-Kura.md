@@ -26,7 +26,7 @@ In the context of IoT application development, Eclipse Kura is an Eclipse IoT Op
 
 To overcome some challenges incorporated in building Industrial IoT applications, Eclipse Kura is soon offering a new feature, called **Kura Wires** essentially focuses on preventing users from having to continually reinvent the wheel. The objective of Kura Wires is to wire reusable components together which eventually allows configurable cooperation between these components.
 
-Kura Wires incorporates Dataflow Programming Model in which every node in a dataflow garph represents either the field objects attached to an IoT service gateway or any computational capability to act upon the data from the field object. A developer can make use of Kura Wires to **visually** or **programmatically** connect blocks instances together, in order to define a dataflow graph that will consume data, process it and, eventually, publish it to the cloud.
+Kura Wires incorporates Dataflow Programming Model in which every node in a dataflow graph represents either the field objects attached to an IoT service gateway or any computational capability to act upon the data from the field object. A developer can make use of Kura Wires to **visually** or **programmatically** connect blocks instances together, in order to define a dataflow graph that will consume data, process it and, eventually, publish it to the cloud.
 
 ## EclipseCON Talk
 
