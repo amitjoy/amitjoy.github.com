@@ -5,7 +5,7 @@ author: amit
 modified:
 share: true
 comments: true
-excerpt: "Adapting Java Lazy Evaluation in your project"
+excerpt: "Kura Wires: Industry 4.0 with Eclipse Kura"
 tags: [Eclipse Kura, Kura Wires, OSGi]
 ---
 
