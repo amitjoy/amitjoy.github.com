@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Kura Wires"
+title: "Kura Wires - A different perspective to develop IIoT applications"
 author: amit
 modified:
 share: true
 comments: true
-excerpt: "Kura Wires - Bits and Pieces"
+excerpt: "Detailed overview on how Kura Wires tries a different approach to develop IIOT applications"
 tags: [Eclipse Kura, Kura Wires, OSGi]
 ---
 
