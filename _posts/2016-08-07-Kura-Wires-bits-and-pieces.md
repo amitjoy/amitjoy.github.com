@@ -78,7 +78,7 @@ You can see that the different **Timer** instances are wired to different instan
 
 These different logical blocks in the Wire graph are properly configured, such as the interval in different instances of **Timer**, the different channels to read or write data from/to the industrial device, the database storage configuration to store data locally and the database view query to perform aggregation on the locally stored data and so on.
 
-So, according to our developed **Wire Graph**, different **Timer** instances will emit an event which will trigger read and/or write operations on the configured channels and the data will be emitted to the downstream **DB Store** logical block which stores the data locally and emits an event to the downstream **DB Filter** logical block to filter the locally stored data. Thereafter, the filtered data will be sent to the wired **Cloud Publisher** logical block which publishes the data to the configured Cloud Platform.
+So, according to our developed **Wire Graph**, different **Timer** instances will emit events on configured intervals which will trigger read and/or write operations on the configured channels and the device data will be emitted to the downstream **DB Store** logical block to store the data locally. The **DB Store** then emits an event to the downstream **DB Filter** logical block to filter the locally stored data. Thereafter, the filtered data will be sent to the wired **Cloud Publisher** logical block which publishes the data to the configured Cloud Platform.
 
 ## Conclusion
 
