@@ -84,4 +84,4 @@ So, according to our developed **Wire Graph**, different **Timer** instances wil
 
 We strongly believe that such visual dataflow programming approach will help users to focus on their application scenario more rather than on writing applications in Eclipse Kura to do the same. Our approach in Kura Wires is very much extensible so that developers can even focus on developing their own **Logical Block**s to create a different **Wire Graph** to implement some different IoT scenario.
 
-In my future blog post, I would discuss more about how to develop specific **Logical Block** to incorporate in **Kura Wires**.
+In my future blog post, I would discuss more about the different features incorporated in **Kura Wires**.
