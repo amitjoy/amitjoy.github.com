@@ -13,7 +13,7 @@ tags: [Eclipse Kura, Kura Wires, OSGi]
 
 ## Overview
 
-In my previous [post](https://dzone.com/articles/kura-wires), I have already discussed about our research work - **Kura Wires** by which we are aiming to solve some intricacies involved in implementing several use cases in Industrial IoT scenarios.
+In my previous [post](http://blog.amitinside.com/Industry-4-with-Kura/), I have already discussed about our research work - **Kura Wires** by which we are aiming to solve some intricacies involved in implementing several use cases in Industrial IoT scenarios.
 
 Today, I would like give you an overview on how **Kura Wires** would try to solve a specific and pervasive use case.
 
