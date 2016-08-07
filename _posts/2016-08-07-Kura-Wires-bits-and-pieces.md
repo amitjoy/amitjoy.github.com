@@ -21,21 +21,21 @@ Today, I would like give you an overview on how **Kura Wires** would try to solv
 
 The main objective of Kura Wires is to wire or connect reusable components together to allow for the configurable cooperation of these components. For instance, a temperature sensor can be connected to Kura-powered service gateway to publish its temperature data to the cloud platform in a timely manner. In a similar use case, industrial devices with different protocols can also be connected to the IoT service gateway, leveraging configurable options for publishing specific or filtered data to remote servers or cloud platforms for further aggregation and analysis.
 
-So, today we would consider this scenario most often found in factories in which the operator or industrial engineer accumulates data from several PLCs connected to a IoT service gateway and sends these machine production data to the cloud integration platform for further aggregation and analysis.
+So, today we would consider this scenario most often found in factories in which the operator or industrial engineer accumulates data from several PLCs connected to an IoT service gateway and sends these machine production data to the cloud integration platform for further aggregation and analysis.
 
 ![alt text](https://s7.postimg.org/73rm94pu3/scenario.png "Industrial IoT Scenario")
 
 ## Glossary
 
-Before we start discussing about how we can solve implementing such a generic Industrial use case, we would like to introduce some terminologies required to understand Kura Wires.
+Before we start discussing about how we can solve implementing such a generic Industrial use case, we would like to introduce some terminologies required to understand **Kura Wires**.
 
 1. **Composer UI** - It is the canvas area for Kura Wires in which the dataflow graph will be created.
 
-2. **Logical Block** - A Logical Block is a visual element in the **Composer UI** which is represented as a node in the Kura Wires dataflow graph.
+2. **Logical Block** - A **Logical Block** is a visual element in the **Composer UI** which is represented as a node in the Kura Wires dataflow graph.
 
 ![alt text](https://s7.postimg.org/mebnn7xbv/logical_block.png "Logical Block")
 
-So, inherently a **Logical Block** *can* (not always though) have 0 to n number of inputs and 0 to n number of outputs.
+So, inherently a **Logical Block** *can* (not always though) have *0 to n* number of inputs and *0 to n* number of outputs.
 
 Few logical blocks can have either of them whereas some will have both of them.
 
@@ -52,7 +52,7 @@ Few logical blocks can have either of them whereas some will have both of them.
 
 So far, we have talked about several Kura Wires specific terminologies which we will be using throughout this post to understand more about Kura Wires.
 
-Now, we would like to see how Kura Wires tries to take away the difficulties in implementing the aforementioned scenario.
+Now, we would like to see how Kura Wires tries to take away the difficulties in implementing the aforementioned scenario. The following digram shows the **Wire Graph** implementation for our chosen scenario.
 
 ![alt text](https://s8.postimg.org/6jokzr1ad/kura_wires.png "Kura Wires Wire Graph")
 
@@ -64,7 +64,7 @@ So, here **Timer1**, **Timer2** and **Timer3** are different instances of **Time
 
 You can see that the different **Timer** instances are wired to different instances of **Asset**.
 
-2. **Modbus Asset** - A **Modbus Asset** is an **myfont Asset** representing a **Modbus Device** in the **Wire Graph**.
+2. **Modbus Asset** - A **Modbus Asset** is an **Asset** representing a **Modbus Device** in the **Wire Graph**.
 
 3. **OPC-UA Asset** - An **OPC-UA Asset** is an **Asset** representing an **OPC-UA Device** in the **Wire Graph**.
 
@@ -82,6 +82,6 @@ So, according to our developed **Wire Graph**, different **Timer** instances wil
 
 ## Conclusion
 
-We strongly believe that such dataflow programming approach will help users to focus on their application scenario more rather than on writing applications in Eclipse Kura to do the same. Our approach is Kura Wires is very much extensible so that developers can even focus on developing their own **Logical Block**s to create a different **Wire Graph** to implement some different IoT scenario.
+We strongly believe that such visual dataflow programming approach will help users to focus on their application scenario more rather than on writing applications in Eclipse Kura to do the same. Our approach in Kura Wires is very much extensible so that developers can even focus on developing their own **Logical Block**s to create a different **Wire Graph** to implement some different IoT scenario.
 
 In my future blog post, I would discuss more about how to develop specific **Logical Block** to incorporate in **Kura Wires**.
