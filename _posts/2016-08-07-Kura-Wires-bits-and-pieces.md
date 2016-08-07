@@ -54,13 +54,13 @@ So far, we have talked about several Kura Wires specific terminologies which we 
 
 Now, we would like to see how Kura Wires tries to take away the difficulties in implementing the aforementioned scenario. The following digram shows the **Wire Graph** implementation for our chosen scenario.
 
-![alt text](https://s8.postimg.org/6jokzr1ad/kura_wires.png "Kura Wires Wire Graph")
+![alt text](https://s7.postimg.org/hdwfkr87v/kura_wires.png "Kura Wires Wire Graph")
 
-Here, in this example, we can see several **Logical Block**s incorporated in the **Wire Graph**, for instance, different instances of **Timer**, different types of **Asset**, **Db Store**, **Db Filter** and **CloudPublisher**.
+Here, in this example, we can see several **Logical Block**s incorporated in the **Wire Graph**, for instance, different instances of **Timer**, different types of **Asset**, **DB Store**, **DB Filter** and **Cloud Publisher**.
 
 1. **Timer** - It is a specific **Logical Block** which is configured with a period and it triggers an event on every configured interval.
 
-So, here **Timer1**, **Timer2** and **Timer3** are different instances of **Timer** logical block which are configured with different time intervals.
+So, here **Timer 1**, **Timer 2** and **Timer 3** are different instances of **Timer** logical block which are configured with different time intervals.
 
 You can see that the different **Timer** instances are wired to different instances of **Asset**.
 
