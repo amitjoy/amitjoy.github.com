@@ -41,18 +41,18 @@ Few logical blocks can have either of them whereas some will have both of them.
 
 3. **Computational Block** - A **Computational Block** is a **Logical Block**, capable of receiving, processing and emitting data to the connected downstream logical blocks. It can be, for example, data store, data filter, data publisher instances that will be used to manage data.
 
-4. **Wire** - A **Wire** is a logical connection between the **Logical Block**s which allows to define a concrete data flow in Kura Wires.
+4. **Wire** - A **Wire** is a logical connection between the **Logical Block**s which allows to define a concrete dataflow in Kura Wires.
 
 5. **Asset** - An **Asset**  is a **Logical Block** that is capable of communicating with specific sensors and/or actuators of **Industrial Device** using specific protocol.
 
-6. **Wire Graph** - A **Wire Graph** is a dataflow graph comprising several aforementioned **Logical Block**s which represents an Industrial IoT Application scenario.
+6. **Wire Graph** - A **Wire Graph** is a dataflow graph comprising several aforementioned **Logical Block**s which represents an Industrial IoT application scenario.
 
 
 ## Wire Graph Example
 
 So far, we have talked about several Kura Wires specific terminologies which we will be using throughout this post to understand more about Kura Wires.
 
-Now, we would like to see how Kura Wires tries to take away the difficulties in implementing the aforementioned scenario. The following digram shows the **Wire Graph** implementation for our chosen scenario.
+Now, we would like to see how Kura Wires tries to take away the difficulties in implementing the aforementioned scenario. The following diagram shows the **Wire Graph** implementation for our chosen scenario.
 
 ![alt text](https://s7.postimg.org/hdwfkr87v/kura_wires.png "Kura Wires Wire Graph")
 
@@ -82,6 +82,6 @@ So, according to our developed **Wire Graph**, different **Timer** instances wil
 
 ## Conclusion
 
-We strongly believe that such visual dataflow programming approach will help users to focus on their application scenario more rather than on writing applications in Eclipse Kura to do the same. Our approach in Kura Wires is very much extensible so that developers can even focus on developing their own **Logical Block**s to create a different **Wire Graph** to implement some different IoT scenario.
+We strongly believe that such visual dataflow programming approach will help users to focus on their application scenario more rather than on writing applications in Eclipse Kura to do the same. Our approach in Kura Wires is very much extensible so that developers can even focus on developing their own **Logical Block**s to create a different **Wire Graph** to implement some different IoT scenarios.
 
-In my future blog post, I would discuss more about the different features incorporated in **Kura Wires**.
+In my future blog post, I would love to discuss more about the different features to be incorporated in **Kura Wires**.
