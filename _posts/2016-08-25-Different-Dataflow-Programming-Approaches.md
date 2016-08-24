@@ -5,7 +5,7 @@ author: amit
 modified:
 share: true
 comments: true
-excerpt: "Visual Dataflow Programming Frameworks and Comparison"
+excerpt: "Several Visual Dataflow Programming Frameworks and Comparison"
 tags: [Eclipse Kura, Kura Wires, OSGi, Node-RED, SAM Labs, SAM, glue.things, IIoT, IoT]
 ---
 
@@ -25,9 +25,9 @@ Today, in this post, I would like to focus on the differences amongst these fram
 
 **Node-RED** provides a browser-based flow editor that makes it easy to wire together devices, APIs, and online services by using the wide range of nodes in the palette. Flows can be then deployed to the Node.js runtime with a single click. **Node-RED** is a flow based approach to support various functionalities and smart devices. Functional blocks, so-called nodes can represent databases, functions or smart devices. These nodes can be wired together and build a functional graph. The nodes encapsulate some functionalities, while it is possible for the developer to implement functions within code, added to a node.
 
-However, **Node-RED** is connecting miniature smart devices, for instance, lights and switches, the UI is essentially aimed for developers as it requires developers to write code snippets in the Node-RED composer UI to define bespoke functionality in a node. This constrains users without programming experience to implement interactions between these smart devices which they have not done before.
+However, **Node-RED** is connecting miniature smart devices, for instance, lights and switches, the UI is essentially aimed for developers as it requires developers to write code snippets in the **Node-RED** composer UI to define bespoke functionality in a node. This constrains users without programming experience to implement interactions between these smart devices which they have not done before.
 
-In addition, as of now it does not support communication with industrial devices for instance, Modbus, OPC-UA, Siemens S7 PLCs etc. which we are aiming to solve using **Kura Wires**. However, custom nodes are provided by many developers to communicate with OPC-UA and Modbus devices, it is still not the primary focus of Node-RED to communicate with industrial devices to process their telemetry data. In **Kura Wires**, our focus is to process machine production data through the use of different Logical blocks and Computational Blocks. We are also aiming to provide several reusable components as much as possible so that users will not need to write a single line of code to implement their own Industrial Internet of Things scenario.
+In addition, as of now it does not support communication with industrial devices for instance, Modbus, OPC-UA, Siemens S7 PLCs etc. which we are aiming to solve using **Kura Wires**. However, custom nodes are provided by many developers to communicate with OPC-UA and Modbus devices, it is still not the primary focus of **Node-RED** to communicate with industrial devices to process their telemetry data. In **Kura Wires**, our focus is to process machine production data through the use of different Logical blocks and Computational Blocks. We are also aiming to provide several reusable components as much as possible so that users will not need to write a single line of code to implement their own Industrial Internet of Things scenarios.
 
 
 ## glue.things
@@ -48,4 +48,4 @@ However, **SAM** does provide a great platform to teach the orchestration of har
 
 ## Conclusion
 
-The primary focus of these frameworks is to facilitate users with an easy to use tool to develop bespoke  Internet of Things scenarios, including functionalities of social network access. Unlike these tools, **Kura Wires** essentially focuses easing the implementation of Industrial Internet of Things scenarios only. However, IoT developers can make use of the extension points in **Kura Wires** to develop custom Logical Blocks for Node-RED-like social access. In addition, our approach in **Kura Wires** benefits users to focus only on their Industrial Internet scenario, rather than focusing on how to implement the scenario. We believe **Kura Wires** would definitely benefit users to rapidly build their Industrial IoT applications.
+The primary focus of these frameworks is to facilitate users with an easy to use tool to develop bespoke  Internet of Things scenarios, including functionalities of social network access. Unlike these tools, **Kura Wires** essentially focuses on easing the implementation of Industrial Internet of Things scenarios only. However, IoT developers can make use of the extension points in **Kura Wires** to develop custom Logical Blocks for Node-RED-like social access and many more. Furthermore, unlike these aforementioned tools, **Kura Wires** is completely based on Java and OSGi which would definitely motivate several Java developers to rapidly develop their own Industrial IoT applications. Our approach in **Kura Wires** hopefully would benefit users to focus on their Industrial Internet scenarios, rather than focusing on how to implement the scenarios.
