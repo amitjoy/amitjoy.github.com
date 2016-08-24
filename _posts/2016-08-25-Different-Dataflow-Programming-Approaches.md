@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Different Dataflow Programming Approaches"
+title: "Different Dataflow Programming Approaches and Comparison with Kura Wires"
 author: amit
 modified:
 share: true
