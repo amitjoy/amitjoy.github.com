@@ -15,7 +15,7 @@ tags: [Eclipse Kura, Kura Wires, OSGi, Node-RED, SAM Labs, SAM, glue.things, IIo
 
 In my previous posts, I have discussed about the dataflow programming approach of **Kura Wires**. Furthermore, I have also discussed about the benefits that **Kura Wires** is expected to serve in the Industrial Internet of Things (IIoT) context.
 
-Currently there already exists few frameworks which work on the dataflow programming model and also incorporate visual paradigm to develop Internet of Things (IoT) applications, for instance, Node_RED, glue.things, SAM Labs.
+Currently there already exists few frameworks which work on the dataflow programming model and also incorporate visual paradigm to develop Internet of Things (IoT) applications, for instance, Node-RED, glue.things, SAM Labs.
 
 Today, in this post, I would like to focus on the differences amongst these frameworks, along with the comparison with **Kura Wires**.
 
