@@ -13,9 +13,9 @@ tags: [Eclipse Kura, Kura Wires, OSGi, Node-RED, SAM Labs, SAM, glue.things, IIo
 
 ## Overview
 
-Previously I have discussed about the upcoming feature in Eclipse Kura which is aiming to solve the Industrial IoT challenges.
+Previously I have discussed about **Kura Wires** - the upcoming feature in Eclipse Kura which is aiming to solve the Industrial IoT challenges.
 
-Today, in this post, I would like to shown you a sneak peek on the beta version of **Kura Wires**.
+Today, in this post, I would like to show you a sneak peek on the beta version of **Kura Wires**.
 
 ## Kura Wires Composer UI
 
@@ -25,11 +25,11 @@ This is the Composer UI of **Kura Wires** to implement Industrial IoT scenarios 
 
 ![alt text](https://s14.postimg.org/sqzzial2p/image.png "Wire Graph")
 
-This shows an example Industrial IoT scenario to accumulate and store telemetry data from Modbus PLC and publish to to the cloud platform.
+This shows an example Industrial IoT scenario to accumulate and store telemetry data from Modbus PLC and publish it to the cloud platform.
 
 ![alt text](https://s9.postimg.org/xae91kwgf/image.png "Wire Graph with Configurable Parameters")
 
-This partially shows the different configurable parameters for a **Modbus Asset**. Based on the driver implementation that the **Asset** uses, the configurable options gets changed. Here what you see is strictly specific to Modbus Driver as I have associated a Modbus Driver implementation to the **Asset** in the **Wire Graph**
+This partially shows the different configurable parameters for a **Modbus Asset**. Based on the driver implementation that the **Asset** uses, the configurable options get changed. Here what you see is strictly specific to Modbus Driver as I have associated a Modbus Driver implementation to the **Asset** in the **Wire Graph**.
 
 ## Conclusion
 
