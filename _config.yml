@@ -15,6 +15,7 @@ sass:
   style: compressed
 gems:
   - jekyll-sitemap
+  - jekyll-feed
 
 kramdown:
   auto_ids: true
@@ -57,7 +58,7 @@ owner:
   github: amitjoy
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
   linkedin: amitjoy
-  xing: #username
+  xing: AmitKumar_Mondal
   instagram: #username
   lastfm: #username
   tumblr: #username
